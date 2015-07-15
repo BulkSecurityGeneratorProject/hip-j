@@ -62,6 +62,14 @@ angular.module('jhipsterApp')
       });
     };
 
+    $scope.saveUser = function(a, b) {
+      Employee.update(a,
+        function() {
+          $scope.refresh();
+        });
+      var x = 1;
+    };
+
     $scope.save = function() {
       if ($scope.user.id != null) {
         Employee.update($scope.user,
