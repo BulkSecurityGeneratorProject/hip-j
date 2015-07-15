@@ -196,5 +196,16 @@
                 </td>
             </tr>
         </table>
+        <!-- <div id="grid1" ui-grid-edit ui-grid="gridOptions3" class="grid"></div> -->
+        <div id="grid2" external-scopes="clickHandler" ui-grid-edit ui-grid-cellNav ui-grid="gridOptions2" class="grid"></div>
+        <!-- <div id="grid1" ui-grid="{ data: myData }" class="grid"></div> -->
+        <strong>Data Length:</strong> {{ gridOptions.data.length | number }}
+        <br>
+        <strong>Last Cell Edited:</strong> {{msg.lastCellEdited}}
+        <br>
+        <div ui-grid-pinning ui-grid="gridOptions" ui-grid-edit class="grid"></div>
+        <br>
+        <div><strong>Last file uploaded:</strong></div>
+        <div>{{lastFile}}</div>
     </div>
 </div>
