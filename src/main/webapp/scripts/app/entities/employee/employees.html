@@ -1,0 +1,185 @@
+<div>
+    <h2 translate="jhipsterApp.employee.home.title">Employees</h2>
+    <div class="container">
+        <div class="row">
+            <!-- <div ng-show="false" class="col-md-4"> -->
+            <div class="col-md-4">
+                <button class="btn btn-primary" data-toggle="modal" data-target="#saveEmployeeModal" ng-click="clear()">
+                    <span class="glyphicon glyphicon-flash"></span> <span translate="jhipsterApp.employee.home.createLabel">Create a new Employee</span>
+                </button>
+            </div>
+            <md-button ng-click="showForm=true" class="action">Create</md-button>
+        </div>
+    </div>
+    <!-- <md-content ng-show="false" layout-padding> -->
+    <md-content ng-show="showForm" layout-padding>
+        <form name="userForm" ng-submit="save()">
+            <div layout layout-sm="column">
+                <md-input-container flex>
+                    <label>ID</label>
+                    <input ng-model="user.id" readonly>
+                </md-input-container>
+                <md-input-container flex>
+                    <label>First name</label>
+                    <input ng-model="user.firstname">
+                </md-input-container>
+                <md-input-container flex>
+                    <label>Last Name</label>
+                    <input ng-model="user.lastname">
+                </md-input-container>
+                <md-input-container flex>
+                    <label>Age</label>
+                    <input type="number" ng-model="user.age">
+                </md-input-container>
+                <md-input-container flex>
+                    <label>Email</label>
+                    <input type="email" ng-model="user.email">
+                </md-input-container>
+            </div>
+            <md-button type="button" ng-click="showForm=false" class="action">Cancel</md-button>
+            <md-button class="action">Save</md-button>
+        </form>
+    </md-content>
+    <div class="modal fade" id="saveEmployeeModal" tabindex="-1" role="dialog" aria-labelledby="myEmployeeLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form name="editForm" role="form" novalidate ng-submit="save2()">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true" ng-click="clear()">&times;</button>
+                        <h4 class="modal-title" id="myEmployeeLabel" translate="jhipsterApp.employee.home.createOrEditLabel">Create or edit a Employee</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label>ID</label>
+                            <input type="text" class="form-control" name="id" ng-model="employee.id" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label translate="jhipsterApp.employee.firstname">Firstname</label>
+                            <input type="text" class="form-control" name="firstname" ng-model="employee.firstname">
+                        </div>
+                        <div class="form-group">
+                            <label translate="jhipsterApp.employee.lastname">Lastname</label>
+                            <input type="text" class="form-control" name="lastname" ng-model="employee.lastname">
+                        </div>
+                        <div class="form-group">
+                            <label translate="jhipsterApp.employee.age">Age</label>
+                            <input type="number" class="form-control" name="age" ng-model="employee.age">
+                        </div>
+                        <div class="form-group">
+                            <label translate="jhipsterApp.employee.email">Email</label>
+                            <input type="text" class="form-control" name="email" ng-model="employee.email">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+                            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+                        </button>
+                        <button type="submit" ng-disabled="editForm.$invalid" class="btn btn-primary">
+                            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="deleteEmployeeConfirmation">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form name="deleteForm" ng-submit="confirmDelete(employee.id)">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true" ng-click="clear()">&times;</button>
+                        <h4 class="modal-title" translate="entity.delete.title">Confirm delete operation</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p translate="jhipsterApp.employee.delete.question" translate-values="{id: '{{employee.id}}'}">Are you sure you want to delete this Employee?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+                            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+                        </button>
+                        <button type="submit" ng-disabled="deleteForm.$invalid" class="btn btn-danger">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete">Delete</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th translate="jhipsterApp.employee.firstname">Firstname</th>
+                    <th translate="jhipsterApp.employee.lastname">Lastname</th>
+                    <th translate="jhipsterApp.employee.age">Age</th>
+                    <th translate="jhipsterApp.employee.email">Email</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="employee in employees">
+                    <td><a ui-sref="employeeDetail({id:employee.id})">{{employee.id}}</a></td>
+                    <td>{{employee.firstname}}</td>
+                    <td>{{employee.lastname}}</td>
+                    <td>{{employee.age}}</td>
+                    <td>{{employee.email}}</td>
+                    <td>
+                        <button type="submit" ui-sref="employeeDetail({id:employee.id})" class="btn btn-info btn-sm">
+                            <span class="glyphicon glyphicon-eye-open"></span>&nbsp;<span translate="entity.action.view"> View</span>
+                        </button>
+                        <button type="submit" ng-click="showUpdate(employee.id)" class="btn btn-primary btn-sm">
+                            <span class="glyphicon glyphicon-pencil"></span>&nbsp;<span translate="entity.action.edit"> Edit</span>
+                        </button>
+                        <button type="submit" ng-click="delete(employee.id)" class="btn btn-danger btn-sm">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete"> Delete</span>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-bordered table-hover table-condensed">
+            <tr style="font-weight: bold">
+                <td style="width:35%">Name</td>
+                <td style="width:20%">Status</td>
+                <td style="width:20%">Group</td>
+                <td style="width:25%">Edit</td>
+            </tr>
+            <tr ng-repeat="user in users">
+                <td>
+                    <!-- editable username (text with validation) -->
+                    <span editable-text="user.name" e-name="name" e-form="rowform" onbeforesave="checkName($data, user.id)" e-required>
+          {{ user.name || 'empty' }}
+        </span>
+                </td>
+                <td>
+                    <!-- editable status (select-local) -->
+                    <span editable-select="user.status" e-name="status" e-form="rowform" e-ng-options="s.value as s.text for s in statuses">
+          {{ showStatus(user) }}
+        </span>
+                </td>
+                <td>
+                    <!-- editable group (select-remote) -->
+                    <span editable-select="user.group" e-name="group" onshow="loadGroups()" e-form="rowform" e-ng-options="g.id as g.text for g in groups">
+          {{ showGroup(user) }}
+        </span>
+                </td>
+                <td style="white-space: nowrap">
+                    <!-- form -->
+                    <form editable-form name="rowform" onbeforesave="saveUser($data, user.id)" ng-show="rowform.$visible" class="form-buttons form-inline" shown="inserted == user">
+                        <button type="submit" ng-disabled="rowform.$waiting" class="btn btn-primary">
+                            save
+                        </button>
+                        <button type="button" ng-disabled="rowform.$waiting" ng-click="rowform.$cancel()" class="btn btn-default">
+                            cancel
+                        </button>
+                    </form>
+                    <div class="buttons" ng-show="!rowform.$visible">
+                        <button class="btn btn-primary" ng-click="rowform.$show()">edit</button>
+                        <button class="btn btn-danger" ng-click="removeUser($index)">del</button>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
