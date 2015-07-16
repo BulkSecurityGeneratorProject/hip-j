@@ -1,0 +1,21 @@
+{
+    "jhipsterApp": {
+        "yeNaya" : {
+            "home": {
+                "title": "YeNayas",
+                "createLabel": "Create a new YeNaya",
+                "createOrEditLabel": "Create or edit a YeNaya"
+            },
+            "delete": {
+                "question": "Are you sure you want to delete YeNaya {{ id }}?"
+            },
+            "detail": {
+                "title": "YeNaya"
+            },
+            "firstname": "Firstname",
+            "lastname": "Lastname",
+            "age": "Age",
+            "email": "Email"
+        }
+    }
+}

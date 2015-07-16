@@ -1,0 +1,22 @@
+{
+    "jhipsterApp": {
+        "morn" : {
+            "home": {
+                "title": "Morns",
+                "createLabel": "Create a new Morn",
+                "createOrEditLabel": "Create or edit a Morn"
+            },
+            "delete": {
+                "question": "Are you sure you want to delete Morn {{ id }}?"
+            },
+            "detail": {
+                "title": "Morn"
+            },
+            "first": "First",
+            "last": "Last",
+            "age": "Age",
+            "email": "Email",
+            "papa": "Papa"
+        }
+    }
+}

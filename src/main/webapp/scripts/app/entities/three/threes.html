@@ -1,0 +1,54 @@
+<div>
+    
+        <div class="header">
+            <span translate="jhipsterApp.three.home.title">Threes</span>
+            <md-button ng-hide="actionButton" ng-click="showForm=true; actionButton=true;" class="action">Create</md-button>
+            <md-button ng-show="actionButton" ng-click="showForm=false; actionButton=false" class="action">Close</md-button>
+        </div>
+        <md-content md-theme="altTheme" ng-show="showForm" layout-padding>
+            <form name="editForm" ng-submit="save()">
+                <div layout layout-sm="column">
+                    <md-input-container flex>
+                        <label>ID</label>
+                        <input ng-model="three.id" readonly>
+                    </md-input-container>
+                    
+
+                        <md-input-container flex>
+                            <label translate="jhipsterApp.three.name">Name</label>
+                            <input ng-model="three.name">
+                        </md-input-container>
+
+                        <md-input-container flex>
+                            <label translate="jhipsterApp.three.country">Country</label>
+                            <input ng-model="three.country">
+                        </md-input-container>
+
+                        <md-input-container flex>
+                            <label translate="jhipsterApp.three.age">Age</label>
+                            <input ng-model="three.age">
+                        </md-input-container>
+
+                        <md-input-container flex>
+                            <label translate="jhipsterApp.three.matches">Matches</label>
+                            <input ng-model="three.matches">
+                        </md-input-container>
+
+                        <md-input-container flex>
+                            <label translate="jhipsterApp.three.catches">Catches</label>
+                            <input ng-model="three.catches">
+                        </md-input-container>
+
+                        <md-input-container flex>
+                            <label translate="jhipsterApp.three.email">Email</label>
+                            <input ng-model="three.email">
+                        </md-input-container>
+
+                </div>
+                <md-button md-theme="default" type="button" ng-click="clear();" class="action">Clear</md-button>
+                <md-button md-theme="default" class="action">Save</md-button>
+            </form>
+        </md-content>
+        <div id="grid" ui-grid-pinning ui-grid-edit ui-grid-cellNav ui-grid="gridOptions" class="grid"></div>
+</div>
+</div>

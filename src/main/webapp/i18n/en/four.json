@@ -1,0 +1,22 @@
+{
+    "jhipsterApp": {
+        "four" : {
+            "home": {
+                "title": "Fours",
+                "createLabel": "Create a new Four",
+                "createOrEditLabel": "Create or edit a Four"
+            },
+            "delete": {
+                "question": "Are you sure you want to delete Four {{ id }}?"
+            },
+            "detail": {
+                "title": "Four"
+            },
+            "firstname": "Firstname",
+            "lastname": "Lastname",
+            "age": "Age",
+            "email": "Email",
+            "country": "Country"
+        }
+    }
+}

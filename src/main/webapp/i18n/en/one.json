@@ -1,0 +1,19 @@
+{
+    "jhipsterApp": {
+        "one" : {
+            "home": {
+                "title": "Ones",
+                "createLabel": "Create a new One",
+                "createOrEditLabel": "Create or edit a One"
+            },
+            "delete": {
+                "question": "Are you sure you want to delete One {{ id }}?"
+            },
+            "detail": {
+                "title": "One"
+            },
+            "a": "A",
+            "b": "B"
+        }
+    }
+}

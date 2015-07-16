@@ -1,0 +1,22 @@
+{
+    "jhipsterApp": {
+        "five" : {
+            "home": {
+                "title": "Fives",
+                "createLabel": "Créer un nouveau Five",
+                "createOrEditLabel": "Créer ou éditer un Five"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Five {{ id }} ?"
+            },
+            "detail": {
+                "title": "Five"
+            },
+            "a": "A",
+            "s": "S",
+            "d": "D",
+            "f": "F"
+        }
+    }
+}
+

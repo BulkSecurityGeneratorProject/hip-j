@@ -1,0 +1,24 @@
+{
+    "jhipsterApp": {
+        "two" : {
+            "home": {
+                "title": "Twos",
+                "createLabel": "Créer un nouveau Two",
+                "createOrEditLabel": "Créer ou éditer un Two"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Two {{ id }} ?"
+            },
+            "detail": {
+                "title": "Two"
+            },
+            "first": "First",
+            "last": "Last",
+            "age": "Age",
+            "email": "Email",
+            "oye": "Oye",
+            "eyo": "Eyo"
+        }
+    }
+}
+

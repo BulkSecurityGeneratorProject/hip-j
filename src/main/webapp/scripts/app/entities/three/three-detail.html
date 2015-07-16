@@ -1,0 +1,70 @@
+
+<div>
+    <h2><span translate="jhipsterApp.three.detail.title">Three</span> {{three.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th translate="entity.detail.field">Field</th>
+                    <th translate="entity.detail.value">Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.three.name">Name</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{three.name}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.three.country">Country</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{three.country}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.three.age">Age</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{three.age}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.three.matches">Matches</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{three.matches}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.three.catches">Catches</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{three.catches}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.three.email">Email</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{three.email}}" readonly>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            ui-sref="three"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

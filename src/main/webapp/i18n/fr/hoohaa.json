@@ -1,0 +1,19 @@
+{
+    "jhipsterApp": {
+        "hoohaa" : {
+            "home": {
+                "title": "Hoohaas",
+                "createLabel": "Créer un nouveau Hoohaa",
+                "createOrEditLabel": "Créer ou éditer un Hoohaa"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Hoohaa {{ id }} ?"
+            },
+            "detail": {
+                "title": "Hoohaa"
+            },
+            "a": "A"
+        }
+    }
+}
+

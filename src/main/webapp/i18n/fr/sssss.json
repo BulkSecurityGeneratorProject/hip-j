@@ -1,0 +1,19 @@
+{
+    "jhipsterApp": {
+        "sssss" : {
+            "home": {
+                "title": "Ssssss",
+                "createLabel": "Créer un nouveau Sssss",
+                "createOrEditLabel": "Créer ou éditer un Sssss"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Sssss {{ id }} ?"
+            },
+            "detail": {
+                "title": "Sssss"
+            },
+            "wwewwe": "Wwewwe"
+        }
+    }
+}
+

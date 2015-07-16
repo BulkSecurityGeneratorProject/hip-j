@@ -1,0 +1,62 @@
+
+<div>
+    <h2><span translate="jhipsterApp.four.detail.title">Four</span> {{four.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th translate="entity.detail.field">Field</th>
+                    <th translate="entity.detail.value">Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.four.firstname">Firstname</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{four.firstname}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.four.lastname">Lastname</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{four.lastname}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.four.age">Age</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{four.age}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.four.email">Email</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{four.email}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.four.country">Country</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{four.country}}" readonly>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            ui-sref="four"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

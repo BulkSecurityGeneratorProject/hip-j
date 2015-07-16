@@ -8,6 +8,11 @@
                 "main": "Entities",
                 "author": "Author",
                 "employee": "Employee",
+                "one": "One",
+                "two": "Two",
+                "three": "Three",
+                "four": "Four",
+                "five": "Five",
                 "additionalEntity": "JHipster will add additional entities here (do not translate!)"
             },
             "account": {

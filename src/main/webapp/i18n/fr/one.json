@@ -1,0 +1,20 @@
+{
+    "jhipsterApp": {
+        "one" : {
+            "home": {
+                "title": "Ones",
+                "createLabel": "Créer un nouveau One",
+                "createOrEditLabel": "Créer ou éditer un One"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le One {{ id }} ?"
+            },
+            "detail": {
+                "title": "One"
+            },
+            "a": "A",
+            "b": "B"
+        }
+    }
+}
+

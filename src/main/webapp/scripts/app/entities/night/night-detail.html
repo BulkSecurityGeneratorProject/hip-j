@@ -1,0 +1,70 @@
+
+<div>
+    <h2><span translate="jhipsterApp.night.detail.title">Night</span> {{night.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th translate="entity.detail.field">Field</th>
+                    <th translate="entity.detail.value">Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.night.first">First</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{night.first}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.night.last">Last</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{night.last}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.night.age">Age</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{night.age}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.night.email">Email</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{night.email}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.night.mummy">Mummy</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{night.mummy}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.night.number">Number</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{night.number}}" readonly>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            ui-sref="night"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

@@ -1,0 +1,18 @@
+{
+    "jhipsterApp": {
+        "sssss" : {
+            "home": {
+                "title": "Ssssss",
+                "createLabel": "Create a new Sssss",
+                "createOrEditLabel": "Create or edit a Sssss"
+            },
+            "delete": {
+                "question": "Are you sure you want to delete Sssss {{ id }}?"
+            },
+            "detail": {
+                "title": "Sssss"
+            },
+            "wwewwe": "Wwewwe"
+        }
+    }
+}

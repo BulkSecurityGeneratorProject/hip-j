@@ -1,0 +1,54 @@
+
+<div>
+    <h2><span translate="jhipsterApp.yeNaya.detail.title">YeNaya</span> {{yeNaya.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th translate="entity.detail.field">Field</th>
+                    <th translate="entity.detail.value">Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.yeNaya.firstname">Firstname</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{yeNaya.firstname}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.yeNaya.lastname">Lastname</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{yeNaya.lastname}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.yeNaya.age">Age</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{yeNaya.age}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.yeNaya.email">Email</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{yeNaya.email}}" readonly>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            ui-sref="yeNaya"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

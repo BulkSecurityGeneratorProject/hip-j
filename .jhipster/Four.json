@@ -1,0 +1,62 @@
+{
+    "relationships": [],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "firstname",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Firstname",
+            "fieldNameUnderscored": "firstname",
+            "fieldInJavaBeanMethod": "Firstname",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "lastname",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Lastname",
+            "fieldNameUnderscored": "lastname",
+            "fieldInJavaBeanMethod": "Lastname",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "age",
+            "fieldType": "Integer",
+            "fieldNameCapitalized": "Age",
+            "fieldNameUnderscored": "age",
+            "fieldInJavaBeanMethod": "Age",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 4,
+            "fieldName": "email",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Email",
+            "fieldNameUnderscored": "email",
+            "fieldInJavaBeanMethod": "Email",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 5,
+            "fieldName": "country",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Country",
+            "fieldNameUnderscored": "country",
+            "fieldInJavaBeanMethod": "Country",
+            "fieldValidate": false
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOwnerOneToOne": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": false,
+    "fieldsContainBigDecimal": false,
+    "fieldsContainDateTime": false,
+    "fieldsContainDate": false,
+    "changelogDate": "20150716122121",
+    "dto": "no",
+    "pagination": "no",
+    "validation": false
+}

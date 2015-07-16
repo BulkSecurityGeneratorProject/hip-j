@@ -1,0 +1,21 @@
+{
+    "jhipsterApp": {
+        "noon" : {
+            "home": {
+                "title": "Noons",
+                "createLabel": "Create a new Noon",
+                "createOrEditLabel": "Create or edit a Noon"
+            },
+            "delete": {
+                "question": "Are you sure you want to delete Noon {{ id }}?"
+            },
+            "detail": {
+                "title": "Noon"
+            },
+            "first": "First",
+            "last": "Last",
+            "age": "Age",
+            "email": "Email"
+        }
+    }
+}

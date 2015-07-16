@@ -1,7 +1,12 @@
+com/mycompany/myapp/web/rest/ThreeResourceTest.class
 com/mycompany/myapp/security/SecurityUtilsTest.class
 com/mycompany/myapp/web/rest/AccountResourceTest.class
 com/mycompany/myapp/web/rest/TestUtil.class
 com/mycompany/myapp/web/rest/EmployeeResourceTest.class
-com/mycompany/myapp/web/rest/AuthorResourceTest.class
-com/mycompany/myapp/service/UserServiceTest.class
 com/mycompany/myapp/web/rest/UserResourceTest.class
+com/mycompany/myapp/web/rest/FourResourceTest.class
+com/mycompany/myapp/web/rest/OneResourceTest.class
+com/mycompany/myapp/web/rest/AuthorResourceTest.class
+com/mycompany/myapp/web/rest/FiveResourceTest.class
+com/mycompany/myapp/service/UserServiceTest.class
+com/mycompany/myapp/web/rest/TwoResourceTest.class

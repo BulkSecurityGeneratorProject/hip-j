@@ -1,0 +1,23 @@
+{
+    "jhipsterApp": {
+        "four" : {
+            "home": {
+                "title": "Fours",
+                "createLabel": "Créer un nouveau Four",
+                "createOrEditLabel": "Créer ou éditer un Four"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Four {{ id }} ?"
+            },
+            "detail": {
+                "title": "Four"
+            },
+            "firstname": "Firstname",
+            "lastname": "Lastname",
+            "age": "Age",
+            "email": "Email",
+            "country": "Country"
+        }
+    }
+}
+

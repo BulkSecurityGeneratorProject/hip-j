@@ -1,0 +1,26 @@
+{
+    "relationships": [],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "wwewwe",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Wwewwe",
+            "fieldNameUnderscored": "wwewwe",
+            "fieldInJavaBeanMethod": "Wwewwe",
+            "fieldValidate": false
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOwnerOneToOne": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": false,
+    "fieldsContainBigDecimal": false,
+    "fieldsContainDateTime": false,
+    "fieldsContainDate": false,
+    "changelogDate": "20150716110828",
+    "dto": "no",
+    "pagination": "no",
+    "validation": false
+}

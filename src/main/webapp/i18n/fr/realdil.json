@@ -1,0 +1,22 @@
+{
+    "jhipsterApp": {
+        "realdil" : {
+            "home": {
+                "title": "Realdils",
+                "createLabel": "Créer un nouveau Realdil",
+                "createOrEditLabel": "Créer ou éditer un Realdil"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Realdil {{ id }} ?"
+            },
+            "detail": {
+                "title": "Realdil"
+            },
+            "firstname": "Firstname",
+            "lastname": "Lastname",
+            "age": "Age",
+            "email": "Email"
+        }
+    }
+}
+

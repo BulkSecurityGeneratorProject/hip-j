@@ -1,0 +1,23 @@
+{
+    "jhipsterApp": {
+        "two" : {
+            "home": {
+                "title": "Twos",
+                "createLabel": "Create a new Two",
+                "createOrEditLabel": "Create or edit a Two"
+            },
+            "delete": {
+                "question": "Are you sure you want to delete Two {{ id }}?"
+            },
+            "detail": {
+                "title": "Two"
+            },
+            "first": "First",
+            "last": "Last",
+            "age": "Age",
+            "email": "Email",
+            "oye": "Oye",
+            "eyo": "Eyo"
+        }
+    }
+}

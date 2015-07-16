@@ -1,0 +1,35 @@
+{
+    "relationships": [],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "a",
+            "fieldType": "String",
+            "fieldNameCapitalized": "A",
+            "fieldNameUnderscored": "a",
+            "fieldInJavaBeanMethod": "A",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "b",
+            "fieldType": "String",
+            "fieldNameCapitalized": "B",
+            "fieldNameUnderscored": "b",
+            "fieldInJavaBeanMethod": "B",
+            "fieldValidate": false
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOwnerOneToOne": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": false,
+    "fieldsContainBigDecimal": false,
+    "fieldsContainDateTime": false,
+    "fieldsContainDate": false,
+    "changelogDate": "20150716114715",
+    "dto": "no",
+    "pagination": "no",
+    "validation": false
+}

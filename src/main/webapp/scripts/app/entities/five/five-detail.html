@@ -1,0 +1,54 @@
+
+<div>
+    <h2><span translate="jhipsterApp.five.detail.title">Five</span> {{five.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th translate="entity.detail.field">Field</th>
+                    <th translate="entity.detail.value">Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.five.a">A</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{five.a}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.five.s">S</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{five.s}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.five.d">D</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{five.d}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.five.f">F</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{five.f}}" readonly>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            ui-sref="five"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

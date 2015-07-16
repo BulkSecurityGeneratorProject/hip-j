@@ -7,5 +7,10 @@
     <include file="classpath:config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
     <include file="classpath:config/liquibase/changelog/20150715104009_added_entity_Author.xml" relativeToChangelogFile="false"/>
     <include file="classpath:config/liquibase/changelog/20150715104734_added_entity_Employee.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20150716114715_added_entity_One.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20150716115647_added_entity_Two.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20150716120655_added_entity_Three.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20150716122121_added_entity_Four.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20150716122908_added_entity_Five.xml" relativeToChangelogFile="false"/>
     <!-- JHipster will add liquibase changelogs here -->
 </databaseChangeLog>

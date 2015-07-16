@@ -1,0 +1,24 @@
+{
+    "jhipsterApp": {
+        "three" : {
+            "home": {
+                "title": "Threes",
+                "createLabel": "Créer un nouveau Three",
+                "createOrEditLabel": "Créer ou éditer un Three"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Three {{ id }} ?"
+            },
+            "detail": {
+                "title": "Three"
+            },
+            "name": "Name",
+            "country": "Country",
+            "age": "Age",
+            "matches": "Matches",
+            "catches": "Catches",
+            "email": "Email"
+        }
+    }
+}
+

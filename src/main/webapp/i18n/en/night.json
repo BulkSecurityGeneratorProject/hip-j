@@ -1,0 +1,23 @@
+{
+    "jhipsterApp": {
+        "night" : {
+            "home": {
+                "title": "Nights",
+                "createLabel": "Create a new Night",
+                "createOrEditLabel": "Create or edit a Night"
+            },
+            "delete": {
+                "question": "Are you sure you want to delete Night {{ id }}?"
+            },
+            "detail": {
+                "title": "Night"
+            },
+            "first": "First",
+            "last": "Last",
+            "age": "Age",
+            "email": "Email",
+            "mummy": "Mummy",
+            "number": "Number"
+        }
+    }
+}

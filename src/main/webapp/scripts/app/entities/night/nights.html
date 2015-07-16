@@ -1,0 +1,54 @@
+<div>
+    
+        <div class="header">
+            <span translate="jhipsterApp.night.home.title">Nights</span>
+            <md-button ng-hide="actionButton" ng-click="showForm=true; actionButton=true;" class="action">Create</md-button>
+            <md-button ng-show="actionButton" ng-click="showForm=false; actionButton=false" class="action">Close</md-button>
+        </div>
+        <md-content md-theme="altTheme" ng-show="showForm" layout-padding>
+            <form name="editForm" ng-submit="save()">
+                <div layout layout-sm="column">
+                    <md-input-container flex>
+                        <label>ID</label>
+                        <input ng-model="night.id" readonly>
+                    </md-input-container>
+                    
+
+                        <md-input-container flex>
+                            <label translate="jhipsterApp.night.first">First</label>
+                            <input ng-model="night.first">
+                        </md-input-container>
+
+                        <md-input-container flex>
+                            <label translate="jhipsterApp.night.last">Last</label>
+                            <input ng-model="night.last">
+                        </md-input-container>
+
+                        <md-input-container flex>
+                            <label translate="jhipsterApp.night.age">Age</label>
+                            <input ng-model="night.age">
+                        </md-input-container>
+
+                        <md-input-container flex>
+                            <label translate="jhipsterApp.night.email">Email</label>
+                            <input ng-model="night.email">
+                        </md-input-container>
+
+                        <md-input-container flex>
+                            <label translate="jhipsterApp.night.mummy">Mummy</label>
+                            <input ng-model="night.mummy">
+                        </md-input-container>
+
+                        <md-input-container flex>
+                            <label translate="jhipsterApp.night.number">Number</label>
+                            <input ng-model="night.number">
+                        </md-input-container>
+
+                </div>
+                <md-button md-theme="default" type="button" ng-click="clear();" class="action">Clear</md-button>
+                <md-button md-theme="default" class="action">Save</md-button>
+            </form>
+        </md-content>
+        <div id="grid" ui-grid-pinning ui-grid-edit ui-grid-cellNav ui-grid="gridOptions" class="grid"></div>
+</div>
+</div>

@@ -1,0 +1,53 @@
+{
+    "relationships": [],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "first",
+            "fieldType": "String",
+            "fieldNameCapitalized": "First",
+            "fieldNameUnderscored": "first",
+            "fieldInJavaBeanMethod": "First",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "last",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Last",
+            "fieldNameUnderscored": "last",
+            "fieldInJavaBeanMethod": "Last",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "age",
+            "fieldType": "Integer",
+            "fieldNameCapitalized": "Age",
+            "fieldNameUnderscored": "age",
+            "fieldInJavaBeanMethod": "Age",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 4,
+            "fieldName": "email",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Email",
+            "fieldNameUnderscored": "email",
+            "fieldInJavaBeanMethod": "Email",
+            "fieldValidate": false
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOwnerOneToOne": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": false,
+    "fieldsContainBigDecimal": false,
+    "fieldsContainDateTime": false,
+    "fieldsContainDate": false,
+    "changelogDate": "20150716112401",
+    "dto": "no",
+    "pagination": "no",
+    "validation": false
+}

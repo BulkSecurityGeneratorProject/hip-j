@@ -1,0 +1,18 @@
+{
+    "jhipsterApp": {
+        "hoohaa" : {
+            "home": {
+                "title": "Hoohaas",
+                "createLabel": "Create a new Hoohaa",
+                "createOrEditLabel": "Create or edit a Hoohaa"
+            },
+            "delete": {
+                "question": "Are you sure you want to delete Hoohaa {{ id }}?"
+            },
+            "detail": {
+                "title": "Hoohaa"
+            },
+            "a": "A"
+        }
+    }
+}

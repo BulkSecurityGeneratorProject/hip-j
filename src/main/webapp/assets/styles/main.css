@@ -21,6 +21,7 @@ Hide ng-cloak on page load, https://docs.angularjs.org/api/ng/directive/ngCloak
 #grid {
     width: 1000px;
     margin: 50px auto;
+    /*height: 100px;*/
 }
 
 .something {
