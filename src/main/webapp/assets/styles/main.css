@@ -3,6 +3,8 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #333;
 }
+
+
 /* ==========================================================================
 Hide ng-cloak on page load, https://docs.angularjs.org/api/ng/directive/ngCloak
 ========================================================================== */
@@ -16,10 +18,76 @@ Hide ng-cloak on page load, https://docs.angularjs.org/api/ng/directive/ngCloak
     display: none !important;
 }
 
-button.action.md-button.md-default-theme {
+#grid2 {
+    width: 1000px;
+    margin: 50px auto;
+}
+
+.something {
+    background-color: yellow;
+}
+
+/*button {
+    border-style: none;
+    border-radius: 3px;
+    padding: 2px 5px;
+}
+*/
+
+
+/*h2.header.ng-scope {
+    padding-left: 20px;
+    margin: 0px;
+}*/
+
+.header {
+    padding: 10px;
+    margin: 0px;
+    background-color: #546E7A;
+    /*background-color: rgb(69, 90, 100);*/
+    /*color: #5c5c5c;*/
+    color: white;
+    font-family: 'Maven Pro', sans-serif;
+    /*font-family: 'Roboto', sans-serif;*/
+    font-size: 36px;
+    line-height: 48px;
+    font-weight: 300;
+    letter-spacing: -0.04em
+}
+
+.action.md-button {
+    font-family: 'Maven Pro', sans-serif;
     background-color: black;
     color: white;
+    text-transform: none;
+    font-size: 24px;
+    float: right;
 }
+
+.action.md-button:hover {
+    background-color: #212121;
+}
+
+input:-webkit-autofill {
+    /*-webkit-box-shadow: 0 0 0px 1000px #CFD8DC inset;*/
+}
+
+.ui-grid-header-cell.center {
+    text-align: center;
+}
+
+
+/*button.action.md-button.md-default-theme {
+    font-family: 'Maven Pro', sans-serif;
+    background-color: black;
+    color: white;
+    text-transform: none;
+    font-size: 24px;
+    float: right;
+}
+*/
+
+
 /* ==========================================================================
 Developement Ribbon
 ========================================================================== */
@@ -36,6 +104,8 @@ Developement Ribbon
     background-position: center center;
     background-repeat: no-repeat;
 }
+
+
 /* ==========================================================================
 Version number in navbar
 ========================================================================== */
@@ -44,6 +114,8 @@ Version number in navbar
     font-size: 10px;
     color: #ccc
 }
+
+
 /* ==========================================================================
 Browser Upgrade Prompt
 ========================================================================== */
@@ -84,6 +156,8 @@ Browser Upgrade Prompt
     background: url("../images/hipster.png") no-repeat center top;
     background-size: contain;
 }
+
+
 /* wait autoprefixer update to allow simple generation of high pixel density media query */
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -161,6 +235,8 @@ only screen and ( min-resolution: 2dppx) {
 .voffset9 {
     margin-top: 150px;
 }
+
+
 /* start Password strength bar style */
 
 ul#strengthBar {
@@ -184,4 +260,6 @@ ul#strengthBar {
     margin-right: 1px;
     width: 20px;
 }
+
+
 /* end Password strength bar style */

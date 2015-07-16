@@ -1,6 +1,12 @@
 <div>
-    <h2 translate="jhipsterApp.employee.home.title">Employees</h2>
-    <div class="container">
+    <div class="header">
+        <span translate="jhipsterApp.employee.home.title">Employees</span>
+        <!-- <h2 class="header" translate="jhipsterApp.employee.home.title">Employees</h2> -->
+        <md-button ng-hide="actionButton" ng-click="showForm=true; actionButton=true;" class="action">Create</md-button>
+        <md-button ng-show="actionButton" ng-click="showForm=false; actionButton=false" class="action">Close</md-button>
+    </div>
+    <!-- <h2 translate="jhipsterApp.employee.home.title">Employees</h2> -->
+    <div ng-if="false" class="container">
         <div class="row">
             <!-- <div ng-show="false" class="col-md-4"> -->
             <div class="col-md-4">
@@ -8,12 +14,14 @@
                     <span class="glyphicon glyphicon-flash"></span> <span translate="jhipsterApp.employee.home.createLabel">Create a new Employee</span>
                 </button>
             </div>
-            <md-button ng-click="showForm=true" class="action">Create</md-button>
+            <!-- <md-button ng-click="showForm=true" class="action">Create</md-button> -->
         </div>
     </div>
-    <!-- <md-content ng-show="false" layout-padding> -->
-    <md-content ng-show="showForm" layout-padding>
-        <form name="userForm" ng-submit="save()">
+    <!-- <md-content md-theme="altTheme" ng-show="true" layout-padding> -->
+    <md-content md-theme="altTheme" ng-show="showForm" layout-padding>
+        <!-- <md-content md-theme="altTheme" ng-show="true" layout-padding> -->
+        <!-- <md-content ng-show="true" layout-padding> -->
+        <form name="editForm1" ng-submit="save()">
             <div layout layout-sm="column">
                 <md-input-container flex>
                     <label>ID</label>
@@ -36,8 +44,9 @@
                     <input type="email" ng-model="user.email">
                 </md-input-container>
             </div>
-            <md-button type="button" ng-click="showForm=false" class="action">Cancel</md-button>
-            <md-button class="action">Save</md-button>
+            <md-button md-theme="default" type="button" ng-click="clear();" class="action">Clear</md-button>
+            <!-- <md-button md-theme="default" type="button" ng-click="showForm=false; clear(); actionButton=false;" class="action">Cancel</md-button> -->
+            <md-button md-theme="default" class="action">Save</md-button>
         </form>
     </md-content>
     <div class="modal fade" id="saveEmployeeModal" tabindex="-1" role="dialog" aria-labelledby="myEmployeeLabel" aria-hidden="true">
@@ -138,7 +147,7 @@
                 </tr>
             </tbody>
         </table>
-        <table class="table table-bordered table-hover table-condensed">
+        <table ng-show="false" class="table table-bordered table-hover table-condensed">
             <tr style="font-weight: bold">
                 <td style="width:35%">ID</td>
                 <td style="width:35%">Firstname</td>
@@ -197,15 +206,16 @@
             </tr>
         </table>
         <!-- <div id="grid1" ui-grid-edit ui-grid="gridOptions3" class="grid"></div> -->
-        <div id="grid2" external-scopes="clickHandler" ui-grid-edit ui-grid-cellNav ui-grid="gridOptions2" class="grid"></div>
+        <!-- <div id="grid2" ui-if="gridOptions2.data.length>0" ui-grid-auto-resize ng-style="getTableHeight()" ui-grid-edit ui-grid-cellNav ui-grid="gridOptions2" class="grid"></div> -->
+        <div id="grid2" ui-grid-pinning ui-grid-edit ui-grid-cellNav ui-grid="gridOptions2" class="grid"></div>
         <!-- <div id="grid1" ui-grid="{ data: myData }" class="grid"></div> -->
-        <strong>Data Length:</strong> {{ gridOptions.data.length | number }}
+        <!--         <strong>Data Length:</strong> {{ gridOptions.data.length | number }}
         <br>
         <strong>Last Cell Edited:</strong> {{msg.lastCellEdited}}
         <br>
         <div ui-grid-pinning ui-grid="gridOptions" ui-grid-edit class="grid"></div>
         <br>
         <div><strong>Last file uploaded:</strong></div>
-        <div>{{lastFile}}</div>
+        <div>{{lastFile}}</div> -->
     </div>
 </div>
