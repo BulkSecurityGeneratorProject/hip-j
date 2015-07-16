@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('jhipsterApp', ['ngAnimate', 'ui.grid.autoResize', 'ui.grid.pinning', 'ui.grid.cellNav', 'addressFormatter', 'ui.grid.edit', 'ui.grid', 'xeditable', 'ngMaterial', 'ngMessages', 'LocalStorageModule', 'tmh.dynamicLocale', 'pascalprecht.translate',
+angular.module('jhipsterApp', ['ngAnimate', 'ui.grid.autoResize', 'ui.grid.pinning', 'ui.grid.cellNav', 'ui.grid.edit', 'ui.grid', 'xeditable', 'ngMaterial', 'ngMessages', 'LocalStorageModule', 'tmh.dynamicLocale', 'pascalprecht.translate',
     'ngResource', 'ui.router', 'ngCookies', 'ngCacheBuster', 'infinite-scroll'
 ])
 

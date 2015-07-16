@@ -18,7 +18,7 @@ Hide ng-cloak on page load, https://docs.angularjs.org/api/ng/directive/ngCloak
     display: none !important;
 }
 
-#grid2 {
+#grid {
     width: 1000px;
     margin: 50px auto;
 }
@@ -26,6 +26,7 @@ Hide ng-cloak on page load, https://docs.angularjs.org/api/ng/directive/ngCloak
 .something {
     background-color: yellow;
 }
+
 
 /*button {
     border-style: none;
@@ -72,9 +73,15 @@ input:-webkit-autofill {
     /*-webkit-box-shadow: 0 0 0px 1000px #CFD8DC inset;*/
 }
 
-.ui-grid-header-cell.center {
+.ui-grid-header-cell {
     text-align: center;
 }
+
+
+/*.ui-grid-header-cell.center {
+    text-align: center;
+}
+*/
 
 
 /*button.action.md-button.md-default-theme {
