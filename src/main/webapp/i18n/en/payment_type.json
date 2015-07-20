@@ -1,0 +1,19 @@
+{
+    "jhipsterApp": {
+        "payment_type" : {
+            "home": {
+                "title": "Payment_types",
+                "createLabel": "Create a new Payment_type",
+                "createOrEditLabel": "Create or edit a Payment_type"
+            },
+            "delete": {
+                "question": "Are you sure you want to delete Payment_type {{ id }}?"
+            },
+            "detail": {
+                "title": "Payment_type"
+            },
+            "name": "Name",
+            "description": "Description"
+        }
+    }
+}

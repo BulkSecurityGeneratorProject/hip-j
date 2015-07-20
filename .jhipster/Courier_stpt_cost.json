@@ -1,0 +1,62 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "courier",
+            "relationshipNameCapitalized": "Courier",
+            "relationshipFieldName": "courier",
+            "otherEntityName": "courier",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "Courier",
+            "otherEntityField": "name"
+        },
+        {
+            "relationshipId": 2,
+            "relationshipName": "payment_service_mapper",
+            "relationshipNameCapitalized": "Payment_service_mapper",
+            "relationshipFieldName": "payment_service_mapper",
+            "otherEntityName": "payment_service_mapper",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "Payment_service_mapper",
+            "otherEntityField": "description"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "cost_flat",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "Cost_flat",
+            "fieldNameUnderscored": "cost_flat",
+            "fieldInJavaBeanMethod": "Cost_flat",
+            "fieldValidate": true,
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "cost_percent",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "Cost_percent",
+            "fieldNameUnderscored": "cost_percent",
+            "fieldInJavaBeanMethod": "Cost_percent",
+            "fieldValidate": true,
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOwnerOneToOne": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": false,
+    "fieldsContainBigDecimal": true,
+    "fieldsContainDateTime": false,
+    "fieldsContainDate": false,
+    "changelogDate": "20150623050453",
+    "dto": "no",
+    "pagination": "pagination",
+    "validation": true
+}

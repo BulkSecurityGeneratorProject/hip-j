@@ -1,0 +1,22 @@
+{
+    "jhipsterApp": {
+        "courier_pincode_serviceability" : {
+            "home": {
+                "title": "Courier_pincode_serviceabilitys",
+                "createLabel": "Créer un nouveau Courier_pincode_serviceability",
+                "createOrEditLabel": "Créer ou éditer un Courier_pincode_serviceability"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Courier_pincode_serviceability {{ id }} ?"
+            },
+            "detail": {
+                "title": "Courier_pincode_serviceability"
+            },
+            "pincode": "Pincode",
+            "capacity": "Capacity",
+            "courier": "courier",
+            "payment_service_mapper": "payment_service_mapper"
+        }
+    }
+}
+

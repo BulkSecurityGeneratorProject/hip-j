@@ -1,0 +1,78 @@
+
+<div>
+    <h2><span translate="jhipsterApp.courier_preferences.detail.title">Courier_preferences</span> {{courier_preferences.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th translate="entity.detail.field">Field</th>
+                    <th translate="entity.detail.value">Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.courier_preferences.priority">Priority</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{courier_preferences.priority}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.courier_preferences.shipment_limit">Shipment_limit</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{courier_preferences.shipment_limit}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.courier_preferences.is_enabled">Is_enabled</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{courier_preferences.is_enabled}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.courier_preferences.source_cluster">source_cluster</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{courier_preferences.source_cluster.name}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.courier_preferences.destination_cluster">destination_cluster</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{courier_preferences.destination_cluster.name}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.courier_preferences.payment_service_mapper">payment_service_mapper</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{courier_preferences.payment_service_mapper.description}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.courier_preferences.courier">courier</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{courier_preferences.courier.name}}" readonly>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            ui-sref="courier_preferences"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

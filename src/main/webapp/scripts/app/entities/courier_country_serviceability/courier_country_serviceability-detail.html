@@ -1,0 +1,62 @@
+
+<div>
+    <h2><span translate="jhipsterApp.courier_country_serviceability.detail.title">Courier_country_serviceability</span> {{courier_country_serviceability.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th translate="entity.detail.field">Field</th>
+                    <th translate="entity.detail.value">Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.courier_country_serviceability.is_enabled">Is_enabled</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{courier_country_serviceability.is_enabled}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.courier_country_serviceability.shipment_capacity">Shipment_capacity</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{courier_country_serviceability.shipment_capacity}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.courier_country_serviceability.courier">courier</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{courier_country_serviceability.courier.name}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.courier_country_serviceability.payment_service_mapper">payment_service_mapper</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{courier_country_serviceability.payment_service_mapper.description}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.courier_country_serviceability.country">country</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{courier_country_serviceability.country.name}}" readonly>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            ui-sref="courier_country_serviceability"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

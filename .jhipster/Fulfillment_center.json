@@ -1,0 +1,169 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "fc_city",
+            "relationshipNameCapitalized": "Fc_city",
+            "relationshipFieldName": "fc_city",
+            "otherEntityName": "city",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "City",
+            "otherEntityField": "name"
+        },
+        {
+            "relationshipId": 2,
+            "relationshipName": "fc_state",
+            "relationshipNameCapitalized": "Fc_state",
+            "relationshipFieldName": "fc_state",
+            "otherEntityName": "state",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "State",
+            "otherEntityField": "code"
+        },
+        {
+            "relationshipId": 3,
+            "relationshipName": "fc_cluster",
+            "relationshipNameCapitalized": "Fc_cluster",
+            "relationshipFieldName": "fc_cluster",
+            "otherEntityName": "cluster",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "Cluster",
+            "otherEntityField": "name"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "fcid",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Fcid",
+            "fieldNameUnderscored": "fcid",
+            "fieldInJavaBeanMethod": "Fcid",
+            "fieldValidate": true,
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Name",
+            "fieldNameUnderscored": "name",
+            "fieldInJavaBeanMethod": "Name",
+            "fieldValidate": true,
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "description",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Description",
+            "fieldNameUnderscored": "description",
+            "fieldInJavaBeanMethod": "Description",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 4,
+            "fieldName": "fc_type",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Fc_type",
+            "fieldNameUnderscored": "fc_type",
+            "fieldInJavaBeanMethod": "Fc_type",
+            "fieldValidate": true,
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldId": 5,
+            "fieldName": "franchise",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Franchise",
+            "fieldNameUnderscored": "franchise",
+            "fieldInJavaBeanMethod": "Franchise",
+            "fieldValidate": true,
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldId": 6,
+            "fieldName": "address1",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Address1",
+            "fieldNameUnderscored": "address1",
+            "fieldInJavaBeanMethod": "Address1",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 7,
+            "fieldName": "address2",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Address2",
+            "fieldNameUnderscored": "address2",
+            "fieldInJavaBeanMethod": "Address2",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 8,
+            "fieldName": "address3",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Address3",
+            "fieldNameUnderscored": "address3",
+            "fieldInJavaBeanMethod": "Address3",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 9,
+            "fieldName": "pincode",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Pincode",
+            "fieldNameUnderscored": "pincode",
+            "fieldInJavaBeanMethod": "Pincode",
+            "fieldValidate": true,
+            "fieldValidateRules": [
+                "required",
+                "minlength",
+                "maxlength"
+            ],
+            "fieldValidateRulesMinlength": "6",
+            "fieldValidateRulesMaxlength": "6"
+        },
+        {
+            "fieldId": 10,
+            "fieldName": "o2s_tat",
+            "fieldType": "Integer",
+            "fieldNameCapitalized": "O2s_tat",
+            "fieldNameUnderscored": "o2s_tat",
+            "fieldInJavaBeanMethod": "o2s_tat",
+            "fieldValidate": true,
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldId": 11,
+            "fieldName": "is_enabled",
+            "fieldType": "Boolean",
+            "fieldNameCapitalized": "Is_enabled",
+            "fieldNameUnderscored": "is_enabled",
+            "fieldInJavaBeanMethod": "Is_enabled",
+            "fieldValidate": false
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOwnerOneToOne": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": false,
+    "fieldsContainBigDecimal": false,
+    "fieldsContainDateTime": false,
+    "fieldsContainDate": false,
+    "changelogDate": "20150618103312",
+    "dto": "no",
+    "pagination": "pagination",
+    "validation": true
+}

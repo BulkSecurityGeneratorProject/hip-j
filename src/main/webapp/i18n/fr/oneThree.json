@@ -1,0 +1,19 @@
+{
+    "jhipsterApp": {
+        "oneThree" : {
+            "home": {
+                "title": "OneThrees",
+                "createLabel": "Créer un nouveau OneThree",
+                "createOrEditLabel": "Créer ou éditer un OneThree"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le OneThree {{ id }} ?"
+            },
+            "detail": {
+                "title": "OneThree"
+            },
+            "threeFour": "ThreeFour"
+        }
+    }
+}
+

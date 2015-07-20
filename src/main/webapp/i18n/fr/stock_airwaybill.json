@@ -1,0 +1,22 @@
+{
+    "jhipsterApp": {
+        "stock_airwaybill" : {
+            "home": {
+                "title": "Stock_airwaybills",
+                "createLabel": "Créer un nouveau Stock_airwaybill",
+                "createOrEditLabel": "Créer ou éditer un Stock_airwaybill"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Stock_airwaybill {{ id }} ?"
+            },
+            "detail": {
+                "title": "Stock_airwaybill"
+            },
+            "awb": "Awb",
+            "status": "Status",
+            "courier": "courier",
+            "payment_type": "payment_type"
+        }
+    }
+}
+

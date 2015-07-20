@@ -1,0 +1,54 @@
+
+<div>
+    <h2><span translate="jhipsterApp.courier_pincode_serviceability.detail.title">Courier_pincode_serviceability</span> {{courier_pincode_serviceability.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th translate="entity.detail.field">Field</th>
+                    <th translate="entity.detail.value">Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.courier_pincode_serviceability.pincode">Pincode</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{courier_pincode_serviceability.pincode}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.courier_pincode_serviceability.capacity">Capacity</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{courier_pincode_serviceability.capacity}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.courier_pincode_serviceability.courier">courier</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{courier_pincode_serviceability.courier.name}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.courier_pincode_serviceability.payment_service_mapper">payment_service_mapper</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{courier_pincode_serviceability.payment_service_mapper.description}}" readonly>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            ui-sref="courier_pincode_serviceability"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

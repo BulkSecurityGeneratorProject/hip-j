@@ -1,0 +1,22 @@
+{
+    "jhipsterApp": {
+        "fc_serviceability" : {
+            "home": {
+                "title": "Fc_serviceabilitys",
+                "createLabel": "Créer un nouveau Fc_serviceability",
+                "createOrEditLabel": "Créer ou éditer un Fc_serviceability"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Fc_serviceability {{ id }} ?"
+            },
+            "detail": {
+                "title": "Fc_serviceability"
+            },
+            "is_enabled": "Is_enabled",
+            "shipment_cutoff_time": "Shipment_cutoff_time",
+            "fc_id": "fc_id",
+            "st_pt_id": "st_pt_id"
+        }
+    }
+}
+

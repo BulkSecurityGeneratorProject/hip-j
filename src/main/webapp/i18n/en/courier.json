@@ -1,0 +1,21 @@
+{
+    "jhipsterApp": {
+        "courier" : {
+            "home": {
+                "title": "Couriers",
+                "createLabel": "Create a new Courier",
+                "createOrEditLabel": "Create or edit a Courier"
+            },
+            "delete": {
+                "question": "Are you sure you want to delete Courier {{ id }}?"
+            },
+            "detail": {
+                "title": "Courier"
+            },
+            "name": "Name",
+            "daily_capacity": "Daily_capacity",
+            "color_code": "Color_code",
+            "is_enabled": "Is_enabled"
+        }
+    }
+}

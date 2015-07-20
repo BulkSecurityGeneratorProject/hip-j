@@ -1,0 +1,22 @@
+{
+    "jhipsterApp": {
+        "master_bag" : {
+            "home": {
+                "title": "Master_bags",
+                "createLabel": "Créer un nouveau Master_bag",
+                "createOrEditLabel": "Créer ou éditer un Master_bag"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Master_bag {{ id }} ?"
+            },
+            "detail": {
+                "title": "Master_bag"
+            },
+            "code": "Code",
+            "creationTime": "Creation_time",
+            "handoverTime": "Handover_time",
+            "courier": "courier"
+        }
+    }
+}
+

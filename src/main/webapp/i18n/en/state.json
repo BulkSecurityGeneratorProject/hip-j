@@ -1,0 +1,18 @@
+{
+    "jhipsterApp": {
+        "state" : {
+            "home": {
+                "title": "States",
+                "createLabel": "Create a new State",
+                "createOrEditLabel": "Create or edit a State"
+            },
+            "delete": {
+                "question": "Are you sure you want to delete State {{ id }}?"
+            },
+            "detail": {
+                "title": "State"
+            },
+            "code": "Code"
+        }
+    }
+}

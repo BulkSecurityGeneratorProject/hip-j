@@ -1,0 +1,86 @@
+
+<div>
+    <h2><span translate="jhipsterApp.tat_cost_matrix.detail.title">Tat_cost_matrix</span> {{tat_cost_matrix.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th translate="entity.detail.field">Field</th>
+                    <th translate="entity.detail.value">Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.tat_cost_matrix.basic_cost">Basic_cost</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{tat_cost_matrix.basic_cost}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.tat_cost_matrix.fixed_addon_cost">Fixed_addon_cost</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{tat_cost_matrix.fixed_addon_cost}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.tat_cost_matrix.variable_addon_percent">Variable_addon_percent</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{tat_cost_matrix.variable_addon_percent}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.tat_cost_matrix.tat">Tat</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{tat_cost_matrix.tat}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.tat_cost_matrix.source_city">source_city</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{tat_cost_matrix.source_city.name}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.tat_cost_matrix.destination_city">destination_city</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{tat_cost_matrix.destination_city.name}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.tat_cost_matrix.courier">courier</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{tat_cost_matrix.courier.name}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.tat_cost_matrix.payment_service_mapper">payment_service_mapper</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{tat_cost_matrix.payment_service_mapper.description}}" readonly>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            ui-sref="tat_cost_matrix"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

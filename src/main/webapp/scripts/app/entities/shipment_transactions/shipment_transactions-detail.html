@@ -1,0 +1,150 @@
+
+<div>
+    <h2><span translate="jhipsterApp.shipment_transactions.detail.title">Shipment_transactions</span> {{shipment_transactions.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th translate="entity.detail.field">Field</th>
+                    <th translate="entity.detail.value">Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.shipment_transactions.orderRef">Order ref</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{shipment_transactions.orderRef}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.shipment_transactions.invoiceId">Invoice Id</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{shipment_transactions.invoiceId}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.shipment_transactions.shipmentId">Shipment Id</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{shipment_transactions.shipmentId}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.shipment_transactions.amount">Amount</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{shipment_transactions.amount}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.shipment_transactions.awb">Awb</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{shipment_transactions.awb}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.shipment_transactions.status">Status</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{shipment_transactions.status}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.shipment_transactions.time">Time</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{shipment_transactions.time}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.shipment_transactions.lbh">Lbh</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{shipment_transactions.lbh}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.shipment_transactions.in_scan_time">In_scan_time</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{shipment_transactions.in_scan_time}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.shipment_transactions.description">Description</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{shipment_transactions.description}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.shipment_transactions.cost">Cost</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{shipment_transactions.cost}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.shipment_transactions.fulfillment_center">fulfillment_center</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{shipment_transactions.fulfillment_center.name}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.shipment_transactions.dest_pincode">dest_pincode</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{shipment_transactions.dest_pincode.pincode}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.shipment_transactions.courier">courier</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{shipment_transactions.courier.name}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.shipment_transactions.payment_service_mapper">payment_service_mapper</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{shipment_transactions.payment_service_mapper.description}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.shipment_transactions.master_bag">master_bag</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{shipment_transactions.master_bag.code}}" readonly>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            ui-sref="shipment_transactions"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

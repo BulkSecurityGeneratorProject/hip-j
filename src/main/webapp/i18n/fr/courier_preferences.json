@@ -1,0 +1,25 @@
+{
+    "jhipsterApp": {
+        "courier_preferences" : {
+            "home": {
+                "title": "Courier_preferencess",
+                "createLabel": "Créer un nouveau Courier_preferences",
+                "createOrEditLabel": "Créer ou éditer un Courier_preferences"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Courier_preferences {{ id }} ?"
+            },
+            "detail": {
+                "title": "Courier_preferences"
+            },
+            "priority": "Priority",
+            "shipment_limit": "Shipment_limit",
+            "is_enabled": "Is_enabled",
+            "source_cluster": "source_cluster",
+            "destination_cluster": "destination_cluster",
+            "payment_service_mapper": "payment_service_mapper",
+            "courier": "courier"
+        }
+    }
+}
+

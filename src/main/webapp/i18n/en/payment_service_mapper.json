@@ -1,0 +1,20 @@
+{
+    "jhipsterApp": {
+        "payment_service_mapper" : {
+            "home": {
+                "title": "Payment_service_mappers",
+                "createLabel": "Create a new Payment_service_mapper",
+                "createOrEditLabel": "Create or edit a Payment_service_mapper"
+            },
+            "delete": {
+                "question": "Are you sure you want to delete Payment_service_mapper {{ id }}?"
+            },
+            "detail": {
+                "title": "Payment_service_mapper"
+            },
+            "description": "Description",
+            "pt_id": "pt_id",
+            "st_id": "st_id"
+        }
+    }
+}

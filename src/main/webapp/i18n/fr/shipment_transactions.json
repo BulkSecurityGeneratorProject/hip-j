@@ -1,0 +1,34 @@
+{
+    "jhipsterApp": {
+        "shipment_transactions" : {
+            "home": {
+                "title": "Shipment_transactionss",
+                "createLabel": "Créer un nouveau Shipment_transactions",
+                "createOrEditLabel": "Créer ou éditer un Shipment_transactions"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Shipment_transactions {{ id }} ?"
+            },
+            "detail": {
+                "title": "Shipment_transactions"
+            },
+            "orderRef": "Order ref",
+            "invoiceId": "Invoice Id",
+            "shipmentId": "Shipment Id",
+            "amount": "Amount",
+            "awb": "Awb",
+            "status": "Status",
+            "time": "Time",
+            "lbh": "Lbh",
+            "in_scan_time": "In_scan_time",
+            "description": "Description",
+            "cost": "Cost",
+            "fulfillment_center": "fulfillment_center",
+            "dest_pincode": "dest_pincode",
+            "courier": "courier",
+            "payment_service_mapper": "payment_service_mapper",
+            "master_bag": "master_bag"
+        }
+    }
+}
+

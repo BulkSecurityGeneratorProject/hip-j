@@ -1,0 +1,54 @@
+
+<div>
+    <h2><span translate="jhipsterApp.stock_airwaybill.detail.title">Stock_airwaybill</span> {{stock_airwaybill.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th translate="entity.detail.field">Field</th>
+                    <th translate="entity.detail.value">Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.stock_airwaybill.awb">Awb</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{stock_airwaybill.awb}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.stock_airwaybill.status">Status</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{stock_airwaybill.status}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.stock_airwaybill.courier">courier</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{stock_airwaybill.courier.name}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.stock_airwaybill.payment_type">payment_type</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{stock_airwaybill.payment_type.name}}" readonly>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            ui-sref="stock_airwaybill"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

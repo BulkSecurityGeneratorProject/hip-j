@@ -1,0 +1,66 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "courier",
+            "relationshipNameCapitalized": "Courier",
+            "relationshipFieldName": "courier",
+            "otherEntityName": "courier",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "Courier",
+            "otherEntityField": "name"
+        },
+        {
+            "relationshipId": 2,
+            "relationshipName": "payment_service_mapper",
+            "relationshipNameCapitalized": "Payment_service_mapper",
+            "relationshipFieldName": "payment_service_mapper",
+            "otherEntityName": "payment_service_mapper",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "Payment_service_mapper",
+            "otherEntityField": "description"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "pincode",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Pincode",
+            "fieldNameUnderscored": "pincode",
+            "fieldInJavaBeanMethod": "Pincode",
+            "fieldValidate": true,
+            "fieldValidateRules": [
+                "required",
+                "minlength",
+                "maxlength"
+            ],
+            "fieldValidateRulesMinlength": "6",
+            "fieldValidateRulesMaxlength": "6"
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "capacity",
+            "fieldType": "Integer",
+            "fieldNameCapitalized": "Capacity",
+            "fieldNameUnderscored": "capacity",
+            "fieldInJavaBeanMethod": "Capacity",
+            "fieldValidate": true,
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOwnerOneToOne": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": false,
+    "fieldsContainBigDecimal": false,
+    "fieldsContainDateTime": false,
+    "fieldsContainDate": false,
+    "changelogDate": "20150618105630",
+    "dto": "no",
+    "pagination": "pagination",
+    "validation": true
+}

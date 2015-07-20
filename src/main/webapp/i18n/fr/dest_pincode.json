@@ -1,0 +1,25 @@
+{
+    "jhipsterApp": {
+        "dest_pincode" : {
+            "home": {
+                "title": "Dest_pincodes",
+                "createLabel": "Créer un nouveau Dest_pincode",
+                "createOrEditLabel": "Créer ou éditer un Dest_pincode"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Dest_pincode {{ id }} ?"
+            },
+            "detail": {
+                "title": "Dest_pincode"
+            },
+            "pincode": "Pincode",
+            "district": "District",
+            "pincode_city": "pincode_city",
+            "pincode_state": "pincode_state",
+            "pincode_region": "pincode_region",
+            "pincode_country": "pincode_country",
+            "pincode_cluster": "pincode_cluster"
+        }
+    }
+}
+

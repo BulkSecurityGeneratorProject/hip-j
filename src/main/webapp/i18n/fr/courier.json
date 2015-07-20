@@ -1,0 +1,22 @@
+{
+    "jhipsterApp": {
+        "courier" : {
+            "home": {
+                "title": "Couriers",
+                "createLabel": "Créer un nouveau Courier",
+                "createOrEditLabel": "Créer ou éditer un Courier"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Courier {{ id }} ?"
+            },
+            "detail": {
+                "title": "Courier"
+            },
+            "name": "Name",
+            "daily_capacity": "Daily_capacity",
+            "color_code": "Color_code",
+            "is_enabled": "Is_enabled"
+        }
+    }
+}
+

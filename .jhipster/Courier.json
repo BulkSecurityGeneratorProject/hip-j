@@ -1,0 +1,62 @@
+{
+    "relationships": [],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Name",
+            "fieldNameUnderscored": "name",
+            "fieldInJavaBeanMethod": "Name",
+            "fieldValidate": true,
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "daily_capacity",
+            "fieldType": "Integer",
+            "fieldNameCapitalized": "Daily_capacity",
+            "fieldNameUnderscored": "daily_capacity",
+            "fieldInJavaBeanMethod": "Daily_capacity",
+            "fieldValidate": true,
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "color_code",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Color_code",
+            "fieldNameUnderscored": "color_code",
+            "fieldInJavaBeanMethod": "Color_code",
+            "fieldValidate": true,
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldId": 4,
+            "fieldName": "is_enabled",
+            "fieldType": "Boolean",
+            "fieldNameCapitalized": "Is_enabled",
+            "fieldNameUnderscored": "is_enabled",
+            "fieldInJavaBeanMethod": "Is_enabled",
+            "fieldValidate": false
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOwnerOneToOne": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": false,
+    "fieldsContainBigDecimal": true,
+    "fieldsContainDateTime": false,
+    "fieldsContainDate": false,
+    "changelogDate": "20150618105002",
+    "dto": "no",
+    "pagination": "pagination",
+    "validation": true
+}

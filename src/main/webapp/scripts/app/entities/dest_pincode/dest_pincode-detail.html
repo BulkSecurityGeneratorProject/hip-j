@@ -1,0 +1,78 @@
+
+<div>
+    <h2><span translate="jhipsterApp.dest_pincode.detail.title">Dest_pincode</span> {{dest_pincode.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th translate="entity.detail.field">Field</th>
+                    <th translate="entity.detail.value">Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.dest_pincode.pincode">Pincode</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{dest_pincode.pincode}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.dest_pincode.district">District</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{dest_pincode.district}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.dest_pincode.pincode_city">pincode_city</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{dest_pincode.pincode_city.name}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.dest_pincode.pincode_state">pincode_state</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{dest_pincode.pincode_state.code}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.dest_pincode.pincode_region">pincode_region</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{dest_pincode.pincode_region.name}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.dest_pincode.pincode_country">pincode_country</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{dest_pincode.pincode_country.name}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.dest_pincode.pincode_cluster">pincode_cluster</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{dest_pincode.pincode_cluster.name}}" readonly>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            ui-sref="dest_pincode"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

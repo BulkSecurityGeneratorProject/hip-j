@@ -1,0 +1,54 @@
+
+<div>
+    <h2><span translate="jhipsterApp.courier.detail.title">Courier</span> {{courier.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th translate="entity.detail.field">Field</th>
+                    <th translate="entity.detail.value">Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.courier.name">Name</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{courier.name}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.courier.daily_capacity">Daily_capacity</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{courier.daily_capacity}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.courier.color_code">Color_code</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{courier.color_code}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.courier.is_enabled">Is_enabled</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{courier.is_enabled}}" readonly>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            ui-sref="courier"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

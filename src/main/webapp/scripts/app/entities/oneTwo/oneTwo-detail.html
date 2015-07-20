@@ -1,0 +1,30 @@
+
+<div>
+    <h2><span translate="jhipsterApp.oneTwo.detail.title">OneTwo</span> {{oneTwo.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th translate="entity.detail.field">Field</th>
+                    <th translate="entity.detail.value">Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.oneTwo.one">One</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{oneTwo.one}}" readonly>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            ui-sref="oneTwo"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

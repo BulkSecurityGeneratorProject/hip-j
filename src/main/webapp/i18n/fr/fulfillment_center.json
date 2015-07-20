@@ -1,0 +1,32 @@
+{
+    "jhipsterApp": {
+        "fulfillment_center" : {
+            "home": {
+                "title": "Fulfillment_centers",
+                "createLabel": "Créer un nouveau Fulfillment_center",
+                "createOrEditLabel": "Créer ou éditer un Fulfillment_center"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Fulfillment_center {{ id }} ?"
+            },
+            "detail": {
+                "title": "Fulfillment_center"
+            },
+            "fcid": "Fcid",
+            "name": "Name",
+            "description": "Description",
+            "fc_type": "Fc_type",
+            "franchise": "Franchise",
+            "address1": "Address1",
+            "address2": "Address2",
+            "address3": "Address3",
+            "pincode": "Pincode",
+            "o2s_tat": "O2s_tat",
+            "is_enabled": "Is_enabled",
+            "fc_city": "fc_city",
+            "fc_state": "fc_state",
+            "fc_cluster": "fc_cluster"
+        }
+    }
+}
+

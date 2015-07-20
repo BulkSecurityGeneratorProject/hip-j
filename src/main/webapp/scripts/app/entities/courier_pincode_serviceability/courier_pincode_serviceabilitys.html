@@ -1,0 +1,61 @@
+<div>
+    
+        <div class="header">
+            <span translate="jhipsterApp.courier_pincode_serviceability.home.title">Courier_pincode_serviceabilitys</span>
+            <md-button ng-hide="actionButton" ng-click="showForm=true; actionButton=true;" class="action">Create</md-button>
+            <md-button ng-show="actionButton" ng-click="showForm=false; actionButton=false" class="action">Close</md-button>
+        </div>
+        <md-content md-theme="altTheme" ng-show="showForm" layout-padding>
+            <form name="editForm" ng-submit="save()">
+                <div layout layout-sm="column">
+                    <md-input-container flex>
+                        <label>ID</label>
+                        <input ng-model="courier_pincode_serviceability.id" readonly>
+                    </md-input-container>
+                    
+
+                        <md-input-container flex>
+                            <label translate="jhipsterApp.courier_pincode_serviceability.pincode">Pincode</label>
+                            <input ng-model="courier_pincode_serviceability.pincode">
+                        </md-input-container>
+
+                        <md-input-container flex>
+                            <label translate="jhipsterApp.courier_pincode_serviceability.capacity">Capacity</label>
+                            <input ng-model="courier_pincode_serviceability.capacity">
+                        </md-input-container>
+
+
+
+
+
+
+
+      <md-select placeholder="Placeholder"  name="courier" ng-model="courier_pincode_serviceability.courier.id">
+        <md-option ng-repeat="courier in couriers" value="{{courier.id}}">{{courier.name}}</md-option>
+      </md-select>
+
+
+
+
+      
+
+
+      <md-select placeholder="Placeholder"  name="payment_service_mapper" ng-model="courier_pincode_serviceability.payment_service_mapper.id">
+        <md-option ng-repeat="payment_service_mapper in payment_service_mappers" value="{{payment_service_mapper.id}}">{{payment_service_mapper.description}}</md-option>
+      </md-select>
+
+
+
+
+      
+
+
+
+                </div>
+                <md-button md-theme="default" type="button" ng-click="clear();" class="action">Clear</md-button>
+                <md-button md-theme="default" class="action">Save</md-button>
+            </form>
+        </md-content>
+        <div id="grid" ui-grid-pinning ui-grid-edit ui-grid-cellNav ui-grid="gridOptions" class="grid"></div>
+</div>
+</div>

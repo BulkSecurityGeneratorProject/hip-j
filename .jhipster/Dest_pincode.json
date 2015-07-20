@@ -1,0 +1,93 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "pincode_city",
+            "relationshipNameCapitalized": "Pincode_city",
+            "relationshipFieldName": "pincode_city",
+            "otherEntityName": "city",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "City",
+            "otherEntityField": "name"
+        },
+        {
+            "relationshipId": 2,
+            "relationshipName": "pincode_state",
+            "relationshipNameCapitalized": "Pincode_state",
+            "relationshipFieldName": "pincode_state",
+            "otherEntityName": "state",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "State",
+            "otherEntityField": "code"
+        },
+        {
+            "relationshipId": 3,
+            "relationshipName": "pincode_region",
+            "relationshipNameCapitalized": "Pincode_region",
+            "relationshipFieldName": "pincode_region",
+            "otherEntityName": "region",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "Region",
+            "otherEntityField": "name"
+        },
+        {
+            "relationshipId": 4,
+            "relationshipName": "pincode_country",
+            "relationshipNameCapitalized": "Pincode_country",
+            "relationshipFieldName": "pincode_country",
+            "otherEntityName": "country",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "Country",
+            "otherEntityField": "name"
+        },
+        {
+            "relationshipId": 5,
+            "relationshipName": "pincode_cluster",
+            "relationshipNameCapitalized": "Pincode_cluster",
+            "relationshipFieldName": "pincode_cluster",
+            "otherEntityName": "cluster",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "Cluster",
+            "otherEntityField": "name"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "pincode",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Pincode",
+            "fieldNameUnderscored": "pincode",
+            "fieldInJavaBeanMethod": "Pincode",
+            "fieldValidate": true,
+            "fieldValidateRules": [
+                "required",
+                "minlength",
+                "maxlength"
+            ],
+            "fieldValidateRulesMinlength": "6",
+            "fieldValidateRulesMaxlength": "6"
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "district",
+            "fieldType": "String",
+            "fieldNameCapitalized": "District",
+            "fieldNameUnderscored": "district",
+            "fieldInJavaBeanMethod": "District",
+            "fieldValidate": false
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOwnerOneToOne": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": false,
+    "fieldsContainBigDecimal": false,
+    "fieldsContainDateTime": false,
+    "fieldsContainDate": false,
+    "changelogDate": "20150618101953",
+    "dto": "no",
+    "pagination": "pagination",
+    "validation": true
+}

@@ -1,0 +1,19 @@
+{
+    "jhipsterApp": {
+        "service_type" : {
+            "home": {
+                "title": "Service_types",
+                "createLabel": "Create a new Service_type",
+                "createOrEditLabel": "Create or edit a Service_type"
+            },
+            "delete": {
+                "question": "Are you sure you want to delete Service_type {{ id }}?"
+            },
+            "detail": {
+                "title": "Service_type"
+            },
+            "name": "Name",
+            "description": "Description"
+        }
+    }
+}

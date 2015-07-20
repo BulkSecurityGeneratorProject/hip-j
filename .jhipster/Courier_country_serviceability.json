@@ -1,0 +1,69 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "courier",
+            "relationshipNameCapitalized": "Courier",
+            "relationshipFieldName": "courier",
+            "otherEntityName": "courier",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "Courier",
+            "otherEntityField": "name"
+        },
+        {
+            "relationshipId": 2,
+            "relationshipName": "payment_service_mapper",
+            "relationshipNameCapitalized": "Payment_service_mapper",
+            "relationshipFieldName": "payment_service_mapper",
+            "otherEntityName": "payment_service_mapper",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "Payment_service_mapper",
+            "otherEntityField": "description"
+        },
+        {
+            "relationshipId": 3,
+            "relationshipName": "country",
+            "relationshipNameCapitalized": "Country",
+            "relationshipFieldName": "country",
+            "otherEntityName": "country",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "Country",
+            "otherEntityField": "name"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "is_enabled",
+            "fieldType": "Boolean",
+            "fieldNameCapitalized": "Is_enabled",
+            "fieldNameUnderscored": "is_enabled",
+            "fieldInJavaBeanMethod": "Is_enabled",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "shipment_capacity",
+            "fieldType": "Integer",
+            "fieldNameCapitalized": "Shipment_capacity",
+            "fieldNameUnderscored": "shipment_capacity",
+            "fieldInJavaBeanMethod": "Shipment_capacity",
+            "fieldValidate": true,
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOwnerOneToOne": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": false,
+    "fieldsContainBigDecimal": false,
+    "fieldsContainDateTime": false,
+    "fieldsContainDate": false,
+    "changelogDate": "20150618105335",
+    "dto": "no",
+    "pagination": "pagination",
+    "validation": true
+}

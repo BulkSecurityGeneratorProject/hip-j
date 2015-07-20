@@ -1,0 +1,91 @@
+<div>
+    
+        <div class="header">
+            <span translate="jhipsterApp.dest_pincode.home.title">Dest_pincodes</span>
+            <md-button ng-hide="actionButton" ng-click="showForm=true; actionButton=true;" class="action">Create</md-button>
+            <md-button ng-show="actionButton" ng-click="showForm=false; actionButton=false" class="action">Close</md-button>
+        </div>
+        <md-content md-theme="altTheme" ng-show="showForm" layout-padding>
+            <form name="editForm" ng-submit="save()">
+                <div layout layout-sm="column">
+                    <md-input-container flex>
+                        <label>ID</label>
+                        <input ng-model="dest_pincode.id" readonly>
+                    </md-input-container>
+                    
+
+                        <md-input-container flex>
+                            <label translate="jhipsterApp.dest_pincode.pincode">Pincode</label>
+                            <input ng-model="dest_pincode.pincode">
+                        </md-input-container>
+
+                        <md-input-container flex>
+                            <label translate="jhipsterApp.dest_pincode.district">District</label>
+                            <input ng-model="dest_pincode.district">
+                        </md-input-container>
+
+
+
+
+
+
+
+      <md-select placeholder="Placeholder"  name="pincode_city" ng-model="dest_pincode.pincode_city.id">
+        <md-option ng-repeat="city in citys" value="{{city.id}}">{{city.name}}</md-option>
+      </md-select>
+
+
+
+
+      
+
+
+      <md-select placeholder="Placeholder"  name="pincode_state" ng-model="dest_pincode.pincode_state.id">
+        <md-option ng-repeat="state in states" value="{{state.id}}">{{state.code}}</md-option>
+      </md-select>
+
+
+
+
+      
+
+
+      <md-select placeholder="Placeholder"  name="pincode_region" ng-model="dest_pincode.pincode_region.id">
+        <md-option ng-repeat="region in regions" value="{{region.id}}">{{region.name}}</md-option>
+      </md-select>
+
+
+
+
+      
+
+
+      <md-select placeholder="Placeholder"  name="pincode_country" ng-model="dest_pincode.pincode_country.id">
+        <md-option ng-repeat="country in countrys" value="{{country.id}}">{{country.name}}</md-option>
+      </md-select>
+
+
+
+
+      
+
+
+      <md-select placeholder="Placeholder"  name="pincode_cluster" ng-model="dest_pincode.pincode_cluster.id">
+        <md-option ng-repeat="cluster in clusters" value="{{cluster.id}}">{{cluster.name}}</md-option>
+      </md-select>
+
+
+
+
+      
+
+
+
+                </div>
+                <md-button md-theme="default" type="button" ng-click="clear();" class="action">Clear</md-button>
+                <md-button md-theme="default" class="action">Save</md-button>
+            </form>
+        </md-content>
+        <div id="grid" ui-grid-pinning ui-grid-edit ui-grid-cellNav ui-grid="gridOptions" class="grid"></div>
+</div>
+</div>

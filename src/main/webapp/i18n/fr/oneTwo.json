@@ -1,0 +1,19 @@
+{
+    "jhipsterApp": {
+        "oneTwo" : {
+            "home": {
+                "title": "OneTwos",
+                "createLabel": "Créer un nouveau OneTwo",
+                "createOrEditLabel": "Créer ou éditer un OneTwo"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le OneTwo {{ id }} ?"
+            },
+            "detail": {
+                "title": "OneTwo"
+            },
+            "one": "One"
+        }
+    }
+}
+

@@ -1,0 +1,22 @@
+{
+    "jhipsterApp": {
+        "courier_country_serviceability" : {
+            "home": {
+                "title": "Courier_country_serviceabilitys",
+                "createLabel": "Create a new Courier_country_serviceability",
+                "createOrEditLabel": "Create or edit a Courier_country_serviceability"
+            },
+            "delete": {
+                "question": "Are you sure you want to delete Courier_country_serviceability {{ id }}?"
+            },
+            "detail": {
+                "title": "Courier_country_serviceability"
+            },
+            "is_enabled": "Is_enabled",
+            "shipment_capacity": "Shipment_capacity",
+            "courier": "courier",
+            "payment_service_mapper": "payment_service_mapper",
+            "country": "country"
+        }
+    }
+}

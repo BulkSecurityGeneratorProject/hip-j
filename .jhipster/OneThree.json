@@ -1,0 +1,26 @@
+{
+    "relationships": [],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "threeFour",
+            "fieldType": "String",
+            "fieldNameCapitalized": "ThreeFour",
+            "fieldNameUnderscored": "three_four",
+            "fieldInJavaBeanMethod": "ThreeFour",
+            "fieldValidate": false
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOwnerOneToOne": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": false,
+    "fieldsContainBigDecimal": false,
+    "fieldsContainDateTime": false,
+    "fieldsContainDate": false,
+    "changelogDate": "20150720111223",
+    "dto": "no",
+    "pagination": "no",
+    "validation": false
+}

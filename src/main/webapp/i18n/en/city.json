@@ -1,0 +1,20 @@
+{
+    "jhipsterApp": {
+        "city" : {
+            "home": {
+                "title": "Citys",
+                "createLabel": "Create a new City",
+                "createOrEditLabel": "Create or edit a City"
+            },
+            "delete": {
+                "question": "Are you sure you want to delete City {{ id }}?"
+            },
+            "detail": {
+                "title": "City"
+            },
+            "code": "Code",
+            "name": "Name",
+            "region": "region"
+        }
+    }
+}

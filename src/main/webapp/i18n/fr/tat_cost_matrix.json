@@ -1,0 +1,26 @@
+{
+    "jhipsterApp": {
+        "tat_cost_matrix" : {
+            "home": {
+                "title": "Tat_cost_matrixs",
+                "createLabel": "Créer un nouveau Tat_cost_matrix",
+                "createOrEditLabel": "Créer ou éditer un Tat_cost_matrix"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Tat_cost_matrix {{ id }} ?"
+            },
+            "detail": {
+                "title": "Tat_cost_matrix"
+            },
+            "basic_cost": "Basic_cost",
+            "fixed_addon_cost": "Fixed_addon_cost",
+            "variable_addon_percent": "Variable_addon_percent",
+            "tat": "Tat",
+            "source_city": "source_city",
+            "destination_city": "destination_city",
+            "courier": "courier",
+            "payment_service_mapper": "payment_service_mapper"
+        }
+    }
+}
+

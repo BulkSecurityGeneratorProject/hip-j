@@ -1,0 +1,184 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "fulfillment_center",
+            "relationshipNameCapitalized": "Fulfillment_center",
+            "relationshipFieldName": "fulfillment_center",
+            "otherEntityName": "fulfillment_center",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "Fulfillment_center",
+            "otherEntityField": "name"
+        },
+        {
+            "relationshipId": 2,
+            "relationshipName": "dest_pincode",
+            "relationshipNameCapitalized": "Dest_pincode",
+            "relationshipFieldName": "dest_pincode",
+            "otherEntityName": "dest_pincode",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "Dest_pincode",
+            "otherEntityField": "pincode"
+        },
+        {
+            "relationshipId": 3,
+            "relationshipName": "courier",
+            "relationshipNameCapitalized": "Courier",
+            "relationshipFieldName": "courier",
+            "otherEntityName": "courier",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "Courier",
+            "otherEntityField": "name"
+        },
+        {
+            "relationshipId": 4,
+            "relationshipName": "payment_service_mapper",
+            "relationshipNameCapitalized": "Payment_service_mapper",
+            "relationshipFieldName": "payment_service_mapper",
+            "otherEntityName": "payment_service_mapper",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "Payment_service_mapper",
+            "otherEntityField": "description"
+        },
+        {
+            "relationshipId": 5,
+            "relationshipName": "master_bag",
+            "relationshipNameCapitalized": "Master_bag",
+            "relationshipFieldName": "master_bag",
+            "otherEntityName": "master_bag",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "Master_bag",
+            "otherEntityField": "code"
+        }
+
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "orderRef",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Order ref",
+            "fieldNameUnderscored": "order_ref",
+            "fieldInJavaBeanMethod": "OrderRef",
+            "fieldValidate": true,
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "invoiceId",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Invoice Id",
+            "fieldNameUnderscored": "invoice_id",
+            "fieldInJavaBeanMethod": "InvoiceId",
+            "fieldValidate": true,
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+	{
+            "fieldId": 3,
+            "fieldName": "shipmentId",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Shipment Id",
+            "fieldNameUnderscored": "shipment_id",
+            "fieldInJavaBeanMethod": "ShipmentId",
+            "fieldValidate": true,
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldId": 4,
+            "fieldName": "amount",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "Amount",
+            "fieldNameUnderscored": "amount",
+            "fieldInJavaBeanMethod": "Amount",
+            "fieldValidate": true,
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldId": 5,
+            "fieldName": "awb",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Awb",
+            "fieldNameUnderscored": "awb",
+            "fieldInJavaBeanMethod": "Awb",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 6,
+            "fieldName": "status",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Status",
+            "fieldNameUnderscored": "status",
+            "fieldInJavaBeanMethod": "Status",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 7,
+            "fieldName": "time",
+            "fieldType": "DateTime",
+            "fieldNameCapitalized": "Time",
+            "fieldNameUnderscored": "time",
+            "fieldInJavaBeanMethod": "Time",
+            "fieldValidate": true,
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldId": 8,
+            "fieldName": "lbh",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Lbh",
+            "fieldNameUnderscored": "lbh",
+            "fieldInJavaBeanMethod": "Lbh",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 9,
+            "fieldName": "in_scan_time",
+            "fieldType": "DateTime",
+            "fieldNameCapitalized": "In_scan_time",
+            "fieldNameUnderscored": "in_scan_time",
+            "fieldInJavaBeanMethod": "In_scan_time",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 10,
+            "fieldName": "description",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Description",
+            "fieldNameUnderscored": "description",
+            "fieldInJavaBeanMethod": "Description",
+            "fieldValidate": false
+        },
+	{
+            "fieldId": 11,
+            "fieldName": "cost",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "Cost",
+            "fieldNameUnderscored": "cost",
+            "fieldInJavaBeanMethod": "Cost",
+            "fieldValidate": false
+
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOwnerOneToOne": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": true,
+    "fieldsContainBigDecimal": true,
+    "fieldsContainDateTime": true,
+    "fieldsContainDate": false,
+    "changelogDate": "20150618111927",
+    "dto": "no",
+    "pagination": "pagination",
+    "validation": true
+}
