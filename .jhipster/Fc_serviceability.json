@@ -1,0 +1,59 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "fc_id",
+            "relationshipNameCapitalized": "Fc_id",
+            "relationshipFieldName": "fc_id",
+            "otherEntityName": "fulfillment_center",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "Fulfillment_center",
+            "otherEntityField": "name"
+        },
+        {
+            "relationshipId": 2,
+            "relationshipName": "st_pt_id",
+            "relationshipNameCapitalized": "St_pt_id",
+            "relationshipFieldName": "st_pt_id",
+            "otherEntityName": "payment_service_mapper",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "Payment_service_mapper",
+            "otherEntityField": "description"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "is_enabled",
+            "fieldType": "Boolean",
+            "fieldNameCapitalized": "Is_enabled",
+            "fieldNameUnderscored": "is_enabled",
+            "fieldInJavaBeanMethod": "Is_enabled",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "shipment_cutoff_time",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Shipment_cutoff_time",
+            "fieldNameUnderscored": "shipment_cutoff_time",
+            "fieldInJavaBeanMethod": "Shipment_cutoff_time",
+            "fieldValidate": true,
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOwnerOneToOne": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": false,
+    "fieldsContainBigDecimal": false,
+    "fieldsContainDateTime": false,
+    "fieldsContainDate": false,
+    "changelogDate": "20150618104629",
+    "dto": "no",
+    "pagination": "pagination",
+    "validation": true
+}

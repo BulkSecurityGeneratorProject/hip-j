@@ -1,0 +1,21 @@
+{
+    "jhipsterApp": {
+        "master_roshi" : {
+            "home": {
+                "title": "Master_roshis",
+                "createLabel": "Create a new Master_roshi",
+                "createOrEditLabel": "Create or edit a Master_roshi"
+            },
+            "delete": {
+                "question": "Are you sure you want to delete Master_roshi {{ id }}?"
+            },
+            "detail": {
+                "title": "Master_roshi"
+            },
+            "code": "Code",
+            "creationTime": "Creation_time",
+            "handoverTime": "Handover_time",
+            "courier": "courier"
+        }
+    }
+}

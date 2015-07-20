@@ -1,0 +1,22 @@
+{
+    "jhipsterApp": {
+        "master_chacha" : {
+            "home": {
+                "title": "Master_chachas",
+                "createLabel": "Créer un nouveau Master_chacha",
+                "createOrEditLabel": "Créer ou éditer un Master_chacha"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Master_chacha {{ id }} ?"
+            },
+            "detail": {
+                "title": "Master_chacha"
+            },
+            "code": "Code",
+            "creationTime": "Creation_time",
+            "handoverTime": "Handover_time",
+            "courier": "courier"
+        }
+    }
+}
+

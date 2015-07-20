@@ -1,0 +1,74 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "payment_type",
+            "relationshipNameCapitalized": "Payment_type",
+            "relationshipFieldName": "payment_type",
+            "otherEntityName": "payment_type",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "Payment_type",
+            "otherEntityField": "name"
+        },
+        {
+            "relationshipId": 2,
+            "relationshipName": "courier",
+            "relationshipNameCapitalized": "Courier",
+            "relationshipFieldName": "courier",
+            "otherEntityName": "courier",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "Courier",
+            "otherEntityField": "name"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "amount",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "Amount",
+            "fieldNameUnderscored": "amount",
+            "fieldInJavaBeanMethod": "Amount",
+            "fieldValidate": true,
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "code",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Code",
+            "fieldNameUnderscored": "code",
+            "fieldInJavaBeanMethod": "Code",
+            "fieldValidate": true,
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "constraint_type",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Constraint_type",
+            "fieldNameUnderscored": "constraint_type",
+            "fieldInJavaBeanMethod": "Constraint_type",
+            "fieldValidate": true,
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOwnerOneToOne": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": false,
+    "fieldsContainBigDecimal": true,
+    "fieldsContainDateTime": false,
+    "fieldsContainDate": false,
+    "changelogDate": "20150618112139",
+    "dto": "no",
+    "pagination": "pagination",
+    "validation": true
+}

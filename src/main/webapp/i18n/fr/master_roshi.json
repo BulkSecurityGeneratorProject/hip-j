@@ -1,0 +1,22 @@
+{
+    "jhipsterApp": {
+        "master_roshi" : {
+            "home": {
+                "title": "Master_roshis",
+                "createLabel": "Créer un nouveau Master_roshi",
+                "createOrEditLabel": "Créer ou éditer un Master_roshi"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Master_roshi {{ id }} ?"
+            },
+            "detail": {
+                "title": "Master_roshi"
+            },
+            "code": "Code",
+            "creationTime": "Creation_time",
+            "handoverTime": "Handover_time",
+            "courier": "courier"
+        }
+    }
+}
+

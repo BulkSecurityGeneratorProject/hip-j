@@ -12,5 +12,15 @@
     <include file="classpath:config/liquibase/changelog/20150716120655_added_entity_Three.xml" relativeToChangelogFile="false"/>
     <include file="classpath:config/liquibase/changelog/20150716122121_added_entity_Four.xml" relativeToChangelogFile="false"/>
     <include file="classpath:config/liquibase/changelog/20150716122908_added_entity_Five.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20150618100813_added_entity_Country.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20150618105002_added_entity_Courier.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20150618111043_added_entity_Master_roshi.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20150618111043_added_entity_Master_chef.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20150618111043_added_entity_Master_mama.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20150618111043_added_entity_Master_chacha.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20150618111043_added_entity_Master_a.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20150618111043_added_entity_Master_b.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20150618111043_added_entity_Master_c.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20150618111043_added_entity_Master_d.xml" relativeToChangelogFile="false"/>
     <!-- JHipster will add liquibase changelogs here -->
 </databaseChangeLog>

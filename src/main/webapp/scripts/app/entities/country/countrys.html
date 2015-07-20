@@ -1,0 +1,34 @@
+<div>
+    
+        <div class="header">
+            <span translate="jhipsterApp.country.home.title">Countrys</span>
+            <md-button ng-hide="actionButton" ng-click="showForm=true; actionButton=true;" class="action">Create</md-button>
+            <md-button ng-show="actionButton" ng-click="showForm=false; actionButton=false" class="action">Close</md-button>
+        </div>
+        <md-content md-theme="altTheme" ng-show="showForm" layout-padding>
+            <form name="editForm" ng-submit="save()">
+                <div layout layout-sm="column">
+                    <md-input-container flex>
+                        <label>ID</label>
+                        <input ng-model="country.id" readonly>
+                    </md-input-container>
+                    
+
+                        <md-input-container flex>
+                            <label translate="jhipsterApp.country.code">Code</label>
+                            <input ng-model="country.code">
+                        </md-input-container>
+
+                        <md-input-container flex>
+                            <label translate="jhipsterApp.country.name">Name</label>
+                            <input ng-model="country.name">
+                        </md-input-container>
+
+                </div>
+                <md-button md-theme="default" type="button" ng-click="clear();" class="action">Clear</md-button>
+                <md-button md-theme="default" class="action">Save</md-button>
+            </form>
+        </md-content>
+        <div id="grid" ui-grid-pinning ui-grid-edit ui-grid-cellNav ui-grid="gridOptions" class="grid"></div>
+</div>
+</div>

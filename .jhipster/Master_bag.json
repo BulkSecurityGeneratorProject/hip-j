@@ -1,0 +1,58 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "courier",
+            "relationshipNameCapitalized": "Courier",
+            "relationshipFieldName": "courier",
+            "otherEntityName": "courier",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "Courier",
+            "otherEntityField": "name"
+        }
+    ],
+    "fields": [
+        
+        {
+            "fieldId": 1,
+            "fieldName": "code",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Code",
+            "fieldNameUnderscored": "code",
+            "fieldInJavaBeanMethod": "Code",
+            "fieldValidate": false
+
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "creationTime",
+            "fieldType": "DateTime",
+            "fieldNameCapitalized": "Creation_time",
+            "fieldNameUnderscored": "creation_time",
+            "fieldInJavaBeanMethod": "CreationTime",
+            "fieldValidate": false
+
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "handoverTime",
+            "fieldType": "DateTime",
+            "fieldNameCapitalized": "Handover_time",
+            "fieldNameUnderscored": "handover_time",
+            "fieldInJavaBeanMethod": "HandoverTime",
+            "fieldValidate": false
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOwnerOneToOne": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": true,
+    "fieldsContainBigDecimal": false,
+    "fieldsContainDateTime": true,
+    "fieldsContainDate": false,
+    "changelogDate": "20150618111043",
+    "dto": "no",
+    "pagination": "pagination",
+    "validation": true
+}

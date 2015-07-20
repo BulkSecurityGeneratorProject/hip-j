@@ -1,0 +1,22 @@
+{
+    "jhipsterApp": {
+        "master_a" : {
+            "home": {
+                "title": "Master_as",
+                "createLabel": "Créer un nouveau Master_a",
+                "createOrEditLabel": "Créer ou éditer un Master_a"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Master_a {{ id }} ?"
+            },
+            "detail": {
+                "title": "Master_a"
+            },
+            "code": "Code",
+            "creationTime": "Creation_time",
+            "handoverTime": "Handover_time",
+            "courier": "courier"
+        }
+    }
+}
+

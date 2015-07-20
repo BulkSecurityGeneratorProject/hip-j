@@ -13,6 +13,16 @@
                 "three": "Three",
                 "four": "Four",
                 "five": "Five",
+                "country": "Country",
+                "courier": "Courier",
+                "master_roshi": "Master_roshi",
+                "master_chef": "Master_chef",
+                "master_mama": "Master_mama",
+                "master_chacha": "Master_chacha",
+                "master_a": "Master_a",
+                "master_b": "Master_b",
+                "master_c": "Master_c",
+                "master_d": "Master_d",
                 "additionalEntity": "JHipster will add additional entities here (do not translate!)"
             },
             "account": {

@@ -1,0 +1,47 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "pt_id",
+            "relationshipNameCapitalized": "Pt_id",
+            "relationshipFieldName": "pt_id",
+            "otherEntityName": "payment_type",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "Payment_type",
+            "otherEntityField": "name"
+        },
+        {
+            "relationshipId": 2,
+            "relationshipName": "st_id",
+            "relationshipNameCapitalized": "St_id",
+            "relationshipFieldName": "st_id",
+            "otherEntityName": "service_type",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "Service_type",
+            "otherEntityField": "name"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "description",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Description",
+            "fieldNameUnderscored": "description",
+            "fieldInJavaBeanMethod": "Description",
+            "fieldValidate": false
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOwnerOneToOne": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": false,
+    "fieldsContainBigDecimal": false,
+    "fieldsContainDateTime": false,
+    "fieldsContainDate": false,
+    "changelogDate": "20150618104031",
+    "dto": "no",
+    "pagination": "pagination",
+    "validation": false
+}

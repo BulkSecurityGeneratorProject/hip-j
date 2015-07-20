@@ -39,6 +39,17 @@ angular.module('jhipsterApp')
                 });
         };
 
+        $scope.edit = function (row) {
+            console.log(row);
+            $scope.five = row;
+            $scope.showForm = true;
+            // Five.delete({id: id},
+            //     function () {
+            //         $scope.loadAll();
+            //         $scope.clear();
+            //     });
+        };
+
         $scope.refresh = function () {
             $scope.loadAll();
             $('#saveFiveModal').modal('hide');
@@ -83,7 +94,7 @@ angular.module('jhipsterApp')
                 width: 150,
                 enableSorting: false,
                 enableCellEdit: false,
-                cellTemplate: '<button id="editBtn" type="button" class="btn-small" ng-click="grid.appScope.delete(row.entity.id)" >Delete</button> '
+                cellTemplate: '<button id="editBtn" type="button" class="btn-small" ng-click="grid.appScope.delete(row.entity.id)">Delete</button><button id="editBtn" type="button" class="btn-small" ng-click="grid.appScope.edit(row.entity)">Edit</button>'
             }],
         };
 

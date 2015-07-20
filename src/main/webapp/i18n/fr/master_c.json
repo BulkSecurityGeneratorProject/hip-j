@@ -1,0 +1,22 @@
+{
+    "jhipsterApp": {
+        "master_c" : {
+            "home": {
+                "title": "Master_cs",
+                "createLabel": "Créer un nouveau Master_c",
+                "createOrEditLabel": "Créer ou éditer un Master_c"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Master_c {{ id }} ?"
+            },
+            "detail": {
+                "title": "Master_c"
+            },
+            "code": "Code",
+            "creationTime": "Creation_time",
+            "handoverTime": "Handover_time",
+            "courier": "courier"
+        }
+    }
+}
+

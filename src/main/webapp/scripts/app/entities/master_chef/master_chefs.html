@@ -1,0 +1,57 @@
+<div>
+    
+        <div class="header">
+            <span translate="jhipsterApp.master_chef.home.title">Master_chefs</span>
+            <md-button ng-hide="actionButton" ng-click="showForm=true; actionButton=true;" class="action">Create</md-button>
+            <md-button ng-show="actionButton" ng-click="showForm=false; actionButton=false" class="action">Close</md-button>
+        </div>
+        <md-content md-theme="altTheme" ng-show="showForm" layout-padding>
+            <form name="editForm" ng-submit="save()">
+                <div layout layout-sm="column">
+                    <md-input-container flex>
+                        <label>ID</label>
+                        <input ng-model="master_chef.id" readonly>
+                    </md-input-container>
+                    
+
+                        <md-input-container flex>
+                            <label translate="jhipsterApp.master_chef.code">Code</label>
+                            <input ng-model="master_chef.code">
+                        </md-input-container>
+
+                        <md-input-container flex>
+                            <label translate="jhipsterApp.master_chef.creationTime">Creation_time</label>
+                            <input ng-model="master_chef.creationTime">
+                        </md-input-container>
+
+                        <md-input-container flex>
+                            <label translate="jhipsterApp.master_chef.handoverTime">Handover_time</label>
+                            <input ng-model="master_chef.handoverTime">
+                        </md-input-container>
+
+
+
+
+
+
+    <label translate="jhipsterApp.master_chef.courier">courier</label>
+
+      <md-select placeholder="State"  name="courier" ng-model="master_chef.courier.id">
+        <md-option ng-repeat="courier in couriers" value="courier.id">courier.name</md-option>
+      </md-select>
+
+
+
+
+      
+
+
+
+                </div>
+                <md-button md-theme="default" type="button" ng-click="clear();" class="action">Clear</md-button>
+                <md-button md-theme="default" class="action">Save</md-button>
+            </form>
+        </md-content>
+        <div id="grid" ui-grid-pinning ui-grid-edit ui-grid-cellNav ui-grid="gridOptions" class="grid"></div>
+</div>
+</div>

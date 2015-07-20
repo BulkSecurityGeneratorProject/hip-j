@@ -1,0 +1,21 @@
+{
+    "jhipsterApp": {
+        "master_chef" : {
+            "home": {
+                "title": "Master_chefs",
+                "createLabel": "Create a new Master_chef",
+                "createOrEditLabel": "Create or edit a Master_chef"
+            },
+            "delete": {
+                "question": "Are you sure you want to delete Master_chef {{ id }}?"
+            },
+            "detail": {
+                "title": "Master_chef"
+            },
+            "code": "Code",
+            "creationTime": "Creation_time",
+            "handoverTime": "Handover_time",
+            "courier": "courier"
+        }
+    }
+}

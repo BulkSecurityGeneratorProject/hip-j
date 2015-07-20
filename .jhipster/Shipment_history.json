@@ -1,0 +1,101 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "courier",
+            "relationshipNameCapitalized": "Courier",
+            "relationshipFieldName": "courier",
+            "otherEntityName": "courier",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "Courier",
+            "otherEntityField": "name"
+        },
+        {
+            "relationshipId": 2,
+            "relationshipName": "shipment_transactions_id",
+            "relationshipNameCapitalized": "Shipment_transactions_id",
+            "relationshipFieldName": "shipment_transactions_id",
+            "otherEntityName": "shipment_transactions",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "Shipment_transactions",
+            "otherEntityField": "invoice_id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "awbno",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Awbno",
+            "fieldNameUnderscored": "awbno",
+            "fieldInJavaBeanMethod": "Awbno",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "threepl_reason_code",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Threepl_reason_code",
+            "fieldNameUnderscored": "threepl_reason_code",
+            "fieldInJavaBeanMethod": "Threepl_reason_code",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "ail_status",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Ail_status",
+            "fieldNameUnderscored": "ail_status",
+            "fieldInJavaBeanMethod": "Ail_status",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 4,
+            "fieldName": "threepl_status",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Threepl_status",
+            "fieldNameUnderscored": "threepl_status",
+            "fieldInJavaBeanMethod": "Threepl_status",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 5,
+            "fieldName": "ail_status_time",
+            "fieldType": "DateTime",
+            "fieldNameCapitalized": "Ail_status_time",
+            "fieldNameUnderscored": "ail_status_time",
+            "fieldInJavaBeanMethod": "Ail_status_time",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 6,
+            "fieldName": "threepl_status_time",
+            "fieldType": "DateTime",
+            "fieldNameCapitalized": "Threepl_status_time",
+            "fieldNameUnderscored": "threepl_status_time",
+            "fieldInJavaBeanMethod": "Threepl_status_time",
+            "fieldValidate": false
+        },
+	{
+            "fieldId": 7,
+            "fieldName": "delivery_attempt",
+            "fieldType": "Integer",
+            "fieldNameCapitalized": "Delivery_attempt",
+            "fieldNameUnderscored": "delivery_attempt",
+            "fieldInJavaBeanMethod": "Delivery_attempt",
+            "fieldValidate": false
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOwnerOneToOne": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": true,
+    "fieldsContainBigDecimal": false,
+    "fieldsContainDateTime": true,
+    "fieldsContainDate": false,
+    "changelogDate": "20150708040355",
+    "dto": "no",
+    "pagination": "pagination",
+    "validation": false
+}

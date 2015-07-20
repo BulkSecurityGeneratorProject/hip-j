@@ -1,0 +1,106 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "source_city",
+            "relationshipNameCapitalized": "Source_city",
+            "relationshipFieldName": "source_city",
+            "otherEntityName": "city",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "City",
+            "otherEntityField": "name"
+        },
+        {
+            "relationshipId": 2,
+            "relationshipName": "destination_city",
+            "relationshipNameCapitalized": "Destination_city",
+            "relationshipFieldName": "destination_city",
+            "otherEntityName": "city",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "City",
+            "otherEntityField": "name"
+        },
+        {
+            "relationshipId": 3,
+            "relationshipName": "courier",
+            "relationshipNameCapitalized": "Courier",
+            "relationshipFieldName": "courier",
+            "otherEntityName": "courier",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "Courier",
+            "otherEntityField": "name"
+        },
+        {
+            "relationshipId": 4,
+            "relationshipName": "payment_service_mapper",
+            "relationshipNameCapitalized": "Payment_service_mapper",
+            "relationshipFieldName": "payment_service_mapper",
+            "otherEntityName": "payment_service_mapper",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "Payment_service_mapper",
+            "otherEntityField": "description"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "basic_cost",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "Basic_cost",
+            "fieldNameUnderscored": "basic_cost",
+            "fieldInJavaBeanMethod": "Basic_cost",
+            "fieldValidate": true,
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "fixed_addon_cost",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "Fixed_addon_cost",
+            "fieldNameUnderscored": "fixed_addon_cost",
+            "fieldInJavaBeanMethod": "Fixed_addon_cost",
+            "fieldValidate": true,
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "variable_addon_percent",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "Variable_addon_percent",
+            "fieldNameUnderscored": "variable_addon_percent",
+            "fieldInJavaBeanMethod": "Variable_addon_percent",
+            "fieldValidate": true,
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldId": 4,
+            "fieldName": "tat",
+            "fieldType": "Long",
+            "fieldNameCapitalized": "Tat",
+            "fieldNameUnderscored": "tat",
+            "fieldInJavaBeanMethod": "Tat",
+            "fieldValidate": true,
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOwnerOneToOne": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": false,
+    "fieldsContainBigDecimal": true,
+    "fieldsContainDateTime": false,
+    "fieldsContainDate": false,
+    "changelogDate": "20150618110222",
+    "dto": "no",
+    "pagination": "pagination",
+    "validation": true
+}

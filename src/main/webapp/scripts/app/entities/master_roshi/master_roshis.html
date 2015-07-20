@@ -1,0 +1,56 @@
+<div>
+    
+        <div class="header">
+            <span translate="jhipsterApp.master_roshi.home.title">Master_roshis</span>
+            <md-button ng-hide="actionButton" ng-click="showForm=true; actionButton=true;" class="action">Create</md-button>
+            <md-button ng-show="actionButton" ng-click="showForm=false; actionButton=false" class="action">Close</md-button>
+        </div>
+        <md-content md-theme="altTheme" ng-show="showForm" layout-padding>
+            <form name="editForm" ng-submit="save()">
+                <div layout layout-sm="column">
+                    <md-input-container flex>
+                        <label>ID</label>
+                        <input ng-model="master_roshi.id" readonly>
+                    </md-input-container>
+                    
+
+                        <md-input-container flex>
+                            <label translate="jhipsterApp.master_roshi.code">Code</label>
+                            <input ng-model="master_roshi.code">
+                        </md-input-container>
+
+                        <md-input-container flex>
+                            <label translate="jhipsterApp.master_roshi.creationTime">Creation_time</label>
+                            <input ng-model="master_roshi.creationTime">
+                        </md-input-container>
+
+                        <md-input-container flex>
+                            <label translate="jhipsterApp.master_roshi.handoverTime">Handover_time</label>
+                            <input ng-model="master_roshi.handoverTime">
+                        </md-input-container>
+
+
+
+
+
+
+
+
+
+
+                        <div class="form-group">
+                            <label translate="jhipsterApp.master_roshi.courier">courier</label>
+                            <select class="form-control" name="courier" ng-model="master_roshi.courier.id" ng-options="courier.id as courier.name for courier in couriers">
+                            </select>
+                        </div>
+
+
+
+                </div>
+                <md-button md-theme="default" type="button" ng-click="clear();" class="action">Clear</md-button>
+                <md-button md-theme="default" class="action">Save</md-button>
+            </form>
+        </md-content>
+        <div id="grid" ui-grid-pinning ui-grid-edit ui-grid-cellNav ui-grid="gridOptions" class="grid"></div>
+</div>
+</div>

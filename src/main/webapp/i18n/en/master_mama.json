@@ -1,0 +1,21 @@
+{
+    "jhipsterApp": {
+        "master_mama" : {
+            "home": {
+                "title": "Master_mamas",
+                "createLabel": "Create a new Master_mama",
+                "createOrEditLabel": "Create or edit a Master_mama"
+            },
+            "delete": {
+                "question": "Are you sure you want to delete Master_mama {{ id }}?"
+            },
+            "detail": {
+                "title": "Master_mama"
+            },
+            "code": "Code",
+            "creationTime": "Creation_time",
+            "handoverTime": "Handover_time",
+            "courier": "courier"
+        }
+    }
+}

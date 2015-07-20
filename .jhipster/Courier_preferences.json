@@ -1,0 +1,91 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "source_cluster",
+            "relationshipNameCapitalized": "Source_cluster",
+            "relationshipFieldName": "source_cluster",
+            "otherEntityName": "cluster",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "Cluster",
+            "otherEntityField": "name"
+        },
+        {
+            "relationshipId": 2,
+            "relationshipName": "destination_cluster",
+            "relationshipNameCapitalized": "Destination_cluster",
+            "relationshipFieldName": "destination_cluster",
+            "otherEntityName": "cluster",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "Cluster",
+            "otherEntityField": "name"
+        },
+        {
+            "relationshipId": 3,
+            "relationshipName": "payment_service_mapper",
+            "relationshipNameCapitalized": "Payment_service_mapper",
+            "relationshipFieldName": "payment_service_mapper",
+            "otherEntityName": "payment_service_mapper",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "Payment_service_mapper",
+            "otherEntityField": "description"
+        },
+        {
+            "relationshipId": 4,
+            "relationshipName": "courier",
+            "relationshipNameCapitalized": "Courier",
+            "relationshipFieldName": "courier",
+            "otherEntityName": "courier",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "Courier",
+            "otherEntityField": "name"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "priority",
+            "fieldType": "Integer",
+            "fieldNameCapitalized": "Priority",
+            "fieldNameUnderscored": "priority",
+            "fieldInJavaBeanMethod": "Priority",
+            "fieldValidate": true,
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "shipment_limit",
+            "fieldType": "Integer",
+            "fieldNameCapitalized": "Shipment_limit",
+            "fieldNameUnderscored": "shipment_limit",
+            "fieldInJavaBeanMethod": "Shipment_limit",
+            "fieldValidate": true,
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "is_enabled",
+            "fieldType": "Boolean",
+            "fieldNameCapitalized": "Is_enabled",
+            "fieldNameUnderscored": "is_enabled",
+            "fieldInJavaBeanMethod": "Is_enabled",
+            "fieldValidate": false
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOwnerOneToOne": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": false,
+    "fieldsContainBigDecimal": false,
+    "fieldsContainDateTime": false,
+    "fieldsContainDate": false,
+    "changelogDate": "20150618110622",
+    "dto": "no",
+    "pagination": "pagination",
+    "validation": true
+}

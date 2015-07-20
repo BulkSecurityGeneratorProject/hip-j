@@ -1,0 +1,22 @@
+{
+    "jhipsterApp": {
+        "master_mama" : {
+            "home": {
+                "title": "Master_mamas",
+                "createLabel": "Créer un nouveau Master_mama",
+                "createOrEditLabel": "Créer ou éditer un Master_mama"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Master_mama {{ id }} ?"
+            },
+            "detail": {
+                "title": "Master_mama"
+            },
+            "code": "Code",
+            "creationTime": "Creation_time",
+            "handoverTime": "Handover_time",
+            "courier": "courier"
+        }
+    }
+}
+
