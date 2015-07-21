@@ -19,7 +19,6 @@ angular.module('jhipsterApp')
         $scope.showUpdate = function (id) {
             Courier.get({id: id}, function(result) {
                 $scope.courier = result;
-                $('#saveCourierModal').modal('show');
             });
         };
 
@@ -37,6 +36,11 @@ angular.module('jhipsterApp')
             }
         };
 
+        $scope.edit = function (entity) {
+            $scope.courier = entity;
+            $scope.showForm = true;
+        };
+
         $scope.delete = function (id) {
             Courier.delete({id: id},
                 function () {
@@ -47,7 +51,6 @@ angular.module('jhipsterApp')
 
         $scope.refresh = function () {
             $scope.loadAll();
-            $('#saveCourierModal').modal('hide');
             $scope.clear();
         };
 
@@ -61,54 +64,47 @@ angular.module('jhipsterApp')
 
         $scope.gridOptions = {
             data: 'couriers',
+            enableFiltering: true,
+            onRegisterApi: function(gridApi) {
+                $scope.gridApi = gridApi;
+                gridApi.edit.on.afterCellEdit($scope, function(rowEntity, colDef, newValue, oldValue) {
+                    Courier.update(rowEntity,
+                        function() {
+                            $scope.refresh();
+                        });
+                });
+            },
             columnDefs: [{
                 field: "id",
                 displayName: "ID",
                 enableCellEdit: false,
                 pinnedLeft: true
 
-
-
             }, {
                 field: "name",
-                displayName: "First Name"
+                displayName: "name"
 
             }, {
                 field: "daily_capacity",
-                displayName: "First Name"
+                displayName: "daily_capacity"
 
             }, {
                 field: "color_code",
-                displayName: "First Name"
+                displayName: "color_code"
 
             }, {
                 field: "is_enabled",
-                displayName: "First Name"
-
-
-
-
-
+                displayName: "is_enabled"
 
 
             }, {
-                name: 'asdf',
-                displayName: "Delete",
+                name: 'placeholder',
+                displayName: '',
                 width: 150,
                 enableSorting: false,
                 enableCellEdit: false,
-                cellTemplate: '<button id="editBtn" type="button" class="btn-small" ng-click="grid.appScope.delete(row.entity.id)" >Delete</button> '
+                enableFiltering: false,
+                cellTemplate: '<button id="delBtn" type="button" class="btn-small" ng-click="grid.appScope.delete(row.entity.id)">Delete</button><button id="editBtn" type="button" class="btn-small" ng-click="grid.appScope.edit(row.entity)">Edit</button>'
             }],
         };
-
-        $scope.gridOptions.onRegisterApi = function(gridApi) {
-            $scope.gridApi = gridApi;
-            gridApi.edit.on.afterCellEdit($scope, function(rowEntity, colDef, newValue, oldValue) {
-                Courier.update(rowEntity,
-                    function() {
-                        $scope.refresh();
-                    });
-            });
-        };
-
     });

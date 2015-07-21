@@ -1,0 +1,21 @@
+{
+    "jhipsterApp": {
+        "master_baggg" : {
+            "home": {
+                "title": "Master_bagggs",
+                "createLabel": "Create a new Master_baggg",
+                "createOrEditLabel": "Create or edit a Master_baggg"
+            },
+            "delete": {
+                "question": "Are you sure you want to delete Master_baggg {{ id }}?"
+            },
+            "detail": {
+                "title": "Master_baggg"
+            },
+            "code": "Code",
+            "creationTime": "Creation_time",
+            "handoverTime": "Handover_time",
+            "courier": "courier"
+        }
+    }
+}

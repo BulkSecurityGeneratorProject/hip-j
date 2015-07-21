@@ -12,6 +12,7 @@ angular.module('jhipsterApp')
         $scope.loadAll();
 
         $scope.gridOptions = {
+            enableFiltering: true,
             data: 'employees',
             columnDefs: [{
                 field: "id",
@@ -20,7 +21,8 @@ angular.module('jhipsterApp')
                 pinnedLeft: true
             }, {
                 field: "firstname",
-                displayName: "First Name"
+                displayName: "First Name",
+                headerCellClass: $scope.highlightFilteredHeader
             }, {
                 field: "lastname",
                 displayName: "Last Name"
@@ -138,4 +140,14 @@ angular.module('jhipsterApp')
             $scope.editForm.$setPristine();
             $scope.editForm.$setUntouched();
         };
+
+        $scope.highlightFilteredHeader = function(row, rowRenderIndex, col, colRenderIndex) {
+            if (col.filters[0].term) {
+                return 'header-filtered';
+            } else {
+                return '';
+            }
+        };
+
+
     });

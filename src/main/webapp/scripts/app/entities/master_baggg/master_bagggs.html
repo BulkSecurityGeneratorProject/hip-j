@@ -1,0 +1,64 @@
+<div>
+
+        <div class="header">
+            <span translate="jhipsterApp.master_baggg.home.title">Master_bagggs</span>
+            <md-button ng-hide="actionButton" ng-click="showForm=true; actionButton=true;" class="action">Create</md-button>
+            <md-button ng-show="actionButton" ng-click="showForm=false; actionButton=false" class="action">Close</md-button>
+        </div>
+        <md-content md-theme="altTheme" ng-show="showForm" layout-padding>
+            <form name="editForm" ng-submit="save()">
+                <div layout layout-sm="column">
+                    <md-input-container flex>
+                        <label>ID</label>
+                        <input ng-model="master_baggg.id" readonly>
+                    </md-input-container>
+
+                    <md-input-container flex>
+                        <label translate="jhipsterApp.master_baggg.code">
+                            Code
+                        </label>
+                        <input ng-model="master_baggg.code">
+                    </md-input-container>
+
+                    <md-input-container flex>
+                        <label translate="jhipsterApp.master_baggg.creationTime">
+                            Creation_time
+                        </label>
+                        <input ng-model="master_baggg.creationTime">
+                    </md-input-container>
+
+                    <md-input-container flex>
+                        <label translate="jhipsterApp.master_baggg.handoverTime">
+                            Handover_time
+                        </label>
+                        <input ng-model="master_baggg.handoverTime">
+                    </md-input-container>
+
+
+ <!-- <md-autocomplete ng-disabled="ctrl.isDisabled" md-no-cache="ctrl.noCache" md-selected-item="ctrl.selectedItem" md-search-text-change="ctrl.searchTextChange(ctrl.searchText)" md-search-text="ctrl.searchText" md-selected-item-change="ctrl.selectedItemChange(item)" md-items="item in ctrl.querySearch(ctrl.searchText)" md-item-text="item.display" md-min-length="0" placeholder="What is your favorite US state?"> <md-item-template> <span md-highlight-text="ctrl.searchText" md-highlight-flags="^i">{{item.display}}</span> </md-item-template> <md-not-found> No matches found for "{{ctrl.searchText}}". </md-not-found> </md-autocomplete> -->
+
+ <md-autocomplete ng-disabled="ctrl.isDisabled" md-no-cache="ctrl.noCache" md-selected-item="master_baggg.courier" md-search-text-change="ctrl.searchTextChange(ctrl.searchText)" md-search-text="ctrl.searchText" md-selected-item-change="ctrl.selectedItemChange(item)" md-items="item in ctrl.querySearch(ctrl.searchText)" md-item-text="item.name" md-min-length="0" placeholder="What is your favorite US state?"> <md-item-template> <span md-highlight-text="ctrl.searchText" md-highlight-flags="^i">{{item.name}}</span> </md-item-template> <md-not-found> No matches found for "{{ctrl.searchText}}". </md-not-found> </md-autocomplete>
+
+
+<!-- <md-autocomplete ng-disabled="ctrl.isDisabled" md-no-cache="ctrl.noCache" md-selected-item="master_baggg.courier" md-search-text-change="ctrl.searchTextChange(ctrl.searchText)" md-search-text="ctrl.searchText" md-selected-item-change="" md-items="item in ctrl.querySearch(ctrl.searchText)" md-item-text="item.name" md-min-length="0" placeholder="courier" <md-item-template> <span md-highlight-text="ctrl.searchText" md-highlight-flags="^i">{{item.name}}</span> </md-item-template> <md-not-found> No matches found for "{{ctrl.searchText}}". </md-not-found> </md-autocomplete> -->
+
+<!-- <div ng-controller="Master_bagggController as ctrl"></div> -->
+
+
+                    <!-- <div ng-controller="Master_bagggController as ctrl" layout="column"> <md-content class="md-padding"> <form ng-submit="$event.preventDefault()">  <br/> </form> </md-content></div> -->
+
+
+<!--
+                    <md-select placeholder="courier" name="courier" ng-model="master_baggg.courier.id">
+                        <md-option ng-repeat="courier in couriers" value="{{courier.id}}">{{
+                            courier.
+                                name}}</md-option>
+                    </md-select>
+ -->
+                </div>
+                <md-button md-theme="default" type="button" ng-click="clear();" class="action">Clear</md-button>
+                <md-button md-theme="default" class="action">Save</md-button>
+            </form>
+        </md-content>
+        <div id="grid" ui-grid-pinning ui-grid-edit ui-grid-cellNav ui-grid="gridOptions" class="grid"></div>
+</div>

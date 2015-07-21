@@ -1,0 +1,75 @@
+<div>
+
+        <div class="header">
+            <span translate="jhipsterApp.test05.home.title">Test05s</span>
+            <md-button ng-hide="actionButton" ng-click="showForm=true; actionButton=true;" class="action">Create</md-button>
+            <md-button ng-show="actionButton" ng-click="showForm=false; actionButton=false" class="action">Close</md-button>
+        </div>
+
+<div ng-controller="Test05Controller as ctrl" layout="column"> <md-content class="md-padding"> <form ng-submit="$event.preventDefault()"> <md-autocomplete ng-disabled="ctrl.isDisabled" md-no-cache="ctrl.noCache" md-selected-item="ctrl.selectedItem" md-search-text-change="ctrl.searchTextChange(ctrl.searchText)" md-search-text="ctrl.searchText" md-selected-item-change="ctrl.selectedItemChange(item)" md-items="item in ctrl.querySearch(ctrl.searchText)" md-item-text="item.display" md-min-length="0" placeholder="What is your favorite US state?"> <md-item-template> <span md-highlight-text="ctrl.searchText" md-highlight-flags="^i">{{item.display}}</span> </md-item-template> <md-not-found> No matches found for "{{ctrl.searchText}}". </md-not-found> </md-autocomplete> <br/> </form> </md-content></div>
+
+<!--
+<div ng-controller="Test05Controller as ctrl" layout="column">
+  <md-content class="md-padding">
+    <form ng-submit="$event.preventDefault()">
+      <md-autocomplete
+          ng-disabled="ctrl.isDisabled"
+          md-no-cache="ctrl.noCache"
+          md-selected-item="ctrl.selectedItem"
+          md-search-text-change="ctrl.searchTextChange(ctrl.searchText)"
+          md-search-text="ctrl.searchText"
+          md-selected-item-change="ctrl.selectedItemChange(item)"
+          md-items="item in ctrl.querySearch(ctrl.searchText)"
+          md-item-text="item.display"
+          md-min-length="0"
+          placeholder="What is your favorite US state?">
+        <md-item-template>
+          <span md-highlight-text="ctrl.searchText" md-highlight-flags="^i">{{item.display}}</span>
+        </md-item-template>
+        <md-not-found>
+          No matches found for "{{ctrl.searchText}}".
+        </md-not-found>
+      </md-autocomplete>
+      <br/>
+    </form>
+  </md-content>
+</div>
+
+ -->
+        <md-content md-theme="altTheme" ng-show="showForm" layout-padding>
+            <form name="editForm" ng-submit="save()">
+                <div layout layout-sm="column">
+                    <md-input-container flex>
+                        <label>ID</label>
+                        <input ng-model="test05.id" readonly>
+                    </md-input-container>
+
+                    <md-input-container flex>
+                        <label translate="jhipsterApp.test05.qwer">
+                            Qwer
+                        </label>
+                        <input ng-model="test05.qwer">
+                    </md-input-container>
+
+                    <md-input-container flex>
+                        <label translate="jhipsterApp.test05.asdf">
+                            Asdf
+                        </label>
+                        <input ng-model="test05.asdf">
+                    </md-input-container>
+
+                    <md-input-container flex>
+                        <label translate="jhipsterApp.test05.zxcv">
+                            Zxcv
+                        </label>
+                        <input ng-model="test05.zxcv">
+                    </md-input-container>
+
+
+                </div>
+                <md-button md-theme="default" type="button" ng-click="clear();" class="action">Clear</md-button>
+                <md-button md-theme="default" class="action">Save</md-button>
+            </form>
+        </md-content>
+        <div id="grid" ui-grid-pinning ui-grid-edit ui-grid-cellNav ui-grid="gridOptions" class="grid"></div>
+</div>

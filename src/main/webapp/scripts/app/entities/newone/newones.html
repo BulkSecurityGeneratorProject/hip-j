@@ -1,0 +1,51 @@
+<div>
+
+        <div class="header">
+            <span translate="jhipsterApp.newone.home.title">Newones</span>
+            <md-button ng-hide="actionButton" ng-click="showForm=true; actionButton=true;" class="action">Create</md-button>
+            <md-button ng-show="actionButton" ng-click="showForm=false; actionButton=false" class="action">Close</md-button>
+        </div>
+        <md-content md-theme="altTheme" ng-show="showForm" layout-padding>
+            <form name="editForm" ng-submit="save()">
+                <div layout layout-sm="column">
+                    <md-input-container flex>
+                        <label>ID</label>
+                        <input ng-model="newone.id" readonly>
+                    </md-input-container>
+
+                    <md-input-container flex>
+                        <label translate="jhipsterApp.newone.code">
+                            Code
+                        </label>
+                        <input ng-model="newone.code">
+                    </md-input-container>
+
+                    <md-input-container flex>
+                        <label translate="jhipsterApp.newone.creationTime">
+                            Creation_time
+                        </label>
+                        <input ng-model="newone.creationTime">
+                    </md-input-container>
+
+                    <md-input-container flex>
+                        <label translate="jhipsterApp.newone.handoverTime">
+                            Handover_time
+                        </label>
+                        <input ng-model="newone.handoverTime">
+                    </md-input-container>
+
+
+                     <md-autocomplete md-no-cache="ctrl.noCache" md-selected-item="master_baggg.courier" md-search-text="something" md-items="item in ctrl.querySearch(ctrl.searchText, 'couriers')" md-item-text="item.name" md-min-length="0"  placeholder="courier" <md-item-template> <span md-highlight-text="ctrl.searchText" md-highlight-flags="^i">{{item.name}}</span> </md-item-template> <md-not-found> No matches found for "{{ctrl.searchText}}". </md-not-found> </md-autocomplete>
+                    <md-select ng-show="false" placeholder="courier" name="courier" ng-model="newone.courier.id">
+                        <md-option ng-repeat="courier in couriers" value="{{courier.id}}">{{
+                            courier.
+                                name}}</md-option>
+                    </md-select>
+
+                </div>
+                <md-button md-theme="default" type="button" ng-click="clear();" class="action">Clear</md-button>
+                <md-button md-theme="default" class="action">Save</md-button>
+            </form>
+        </md-content>
+        <div id="grid" ui-grid-pinning ui-grid-edit ui-grid-cellNav ui-grid="gridOptions" class="grid"></div>
+</div>

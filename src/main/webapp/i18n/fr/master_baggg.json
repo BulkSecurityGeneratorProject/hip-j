@@ -1,0 +1,22 @@
+{
+    "jhipsterApp": {
+        "master_baggg" : {
+            "home": {
+                "title": "Master_bagggs",
+                "createLabel": "Créer un nouveau Master_baggg",
+                "createOrEditLabel": "Créer ou éditer un Master_baggg"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Master_baggg {{ id }} ?"
+            },
+            "detail": {
+                "title": "Master_baggg"
+            },
+            "code": "Code",
+            "creationTime": "Creation_time",
+            "handoverTime": "Handover_time",
+            "courier": "courier"
+        }
+    }
+}
+

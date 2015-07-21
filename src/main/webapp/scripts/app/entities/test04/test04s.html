@@ -1,0 +1,44 @@
+<div>
+    
+        <div class="header">
+            <span translate="jhipsterApp.test04.home.title">Test04s</span>
+            <md-button ng-hide="actionButton" ng-click="showForm=true; actionButton=true;" class="action">Create</md-button>
+            <md-button ng-show="actionButton" ng-click="showForm=false; actionButton=false" class="action">Close</md-button>
+        </div>
+        <md-content md-theme="altTheme" ng-show="showForm" layout-padding>
+            <form name="editForm" ng-submit="save()">
+                <div layout layout-sm="column">
+                    <md-input-container flex>
+                        <label>ID</label>
+                        <input ng-model="test04.id" readonly>
+                    </md-input-container>
+
+                    <md-input-container flex>
+                        <label translate="jhipsterApp.test04.qwer">
+                            Qwer
+                        </label>
+                        <input ng-model="test04.qwer">
+                    </md-input-container>
+
+                    <md-input-container flex>
+                        <label translate="jhipsterApp.test04.asdf">
+                            Asdf
+                        </label>
+                        <input ng-model="test04.asdf">
+                    </md-input-container>
+
+                    <md-input-container flex>
+                        <label translate="jhipsterApp.test04.zxcv">
+                            Zxcv
+                        </label>
+                        <input ng-model="test04.zxcv">
+                    </md-input-container>
+
+
+                </div>
+                <md-button md-theme="default" type="button" ng-click="clear();" class="action">Clear</md-button>
+                <md-button md-theme="default" class="action">Save</md-button>
+            </form>
+        </md-content>
+        <div id="grid" ui-grid-pinning ui-grid-edit ui-grid-cellNav ui-grid="gridOptions" class="grid"></div>
+</div>

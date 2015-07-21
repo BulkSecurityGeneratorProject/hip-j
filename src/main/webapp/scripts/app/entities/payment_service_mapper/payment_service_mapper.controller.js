@@ -73,7 +73,7 @@ angular.module('jhipsterApp')
 
             }, {
                 field: "description",
-                displayName: "First Name"
+                displayName: "description"
 
 
 
@@ -82,11 +82,11 @@ angular.module('jhipsterApp')
 
             }, {
                 field: "payment_type.name",
-                displayName: "Dat Name"
+                displayName: "pt_id"
       
             }, {
                 field: "service_type.name",
-                displayName: "Dat Name"
+                displayName: "st_id"
       
 
             }, {

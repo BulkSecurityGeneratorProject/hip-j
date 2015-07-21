@@ -1,0 +1,54 @@
+
+<div>
+    <h2><span translate="jhipsterApp.jewone.detail.title">Jewone</span> {{jewone.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th translate="entity.detail.field">Field</th>
+                    <th translate="entity.detail.value">Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.jewone.code">Code</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{jewone.code}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.jewone.creationTime">Creation_time</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{jewone.creationTime}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.jewone.handoverTime">Handover_time</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{jewone.handoverTime}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.jewone.courier">courier</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{jewone.courier.name}}" readonly>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            ui-sref="jewone"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

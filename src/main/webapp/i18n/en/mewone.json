@@ -1,0 +1,21 @@
+{
+    "jhipsterApp": {
+        "mewone" : {
+            "home": {
+                "title": "Mewones",
+                "createLabel": "Create a new Mewone",
+                "createOrEditLabel": "Create or edit a Mewone"
+            },
+            "delete": {
+                "question": "Are you sure you want to delete Mewone {{ id }}?"
+            },
+            "detail": {
+                "title": "Mewone"
+            },
+            "code": "Code",
+            "creationTime": "Creation_time",
+            "handoverTime": "Handover_time",
+            "courier": "courier"
+        }
+    }
+}

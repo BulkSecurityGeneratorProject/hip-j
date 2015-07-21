@@ -1,0 +1,20 @@
+{
+    "jhipsterApp": {
+        "abhishek" : {
+            "home": {
+                "title": "Abhisheks",
+                "createLabel": "Create a new Abhishek",
+                "createOrEditLabel": "Create or edit a Abhishek"
+            },
+            "delete": {
+                "question": "Are you sure you want to delete Abhishek {{ id }}?"
+            },
+            "detail": {
+                "title": "Abhishek"
+            },
+            "firstname": "Firstname",
+            "lastname": "Lastname",
+            "age": "Age"
+        }
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "jhipsterApp": {
+        "test05" : {
+            "home": {
+                "title": "Test05s",
+                "createLabel": "Créer un nouveau Test05",
+                "createOrEditLabel": "Créer ou éditer un Test05"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Test05 {{ id }} ?"
+            },
+            "detail": {
+                "title": "Test05"
+            },
+            "qwer": "Qwer",
+            "asdf": "Asdf",
+            "zxcv": "Zxcv"
+        }
+    }
+}
+

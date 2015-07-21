@@ -13,39 +13,26 @@
                         <input ng-model="payment_service_mapper.id" readonly>
                     </md-input-container>
                     
-
                         <md-input-container flex>
-                            <label translate="jhipsterApp.payment_service_mapper.description">Description</label>
+                            <label translate="jhipsterApp.payment_service_mapper.description">
+                                Description
+                            </label>
                             <input ng-model="payment_service_mapper.description">
                         </md-input-container>
-
-
-
-
-
-
-
-      <md-select placeholder="Placeholder"  name="pt_id" ng-model="payment_service_mapper.pt_id.id">
-        <md-option ng-repeat="payment_type in payment_types" value="{{payment_type.id}}">{{payment_type.name}}</md-option>
-      </md-select>
-
-
-
-
-      
-
-
-      <md-select placeholder="Placeholder"  name="st_id" ng-model="payment_service_mapper.st_id.id">
-        <md-option ng-repeat="service_type in service_types" value="{{service_type.id}}">{{service_type.name}}</md-option>
-      </md-select>
-
-
-
-
-      
-
-
-
+                        
+                            
+                                <md-select placeholder="pt_id" name="pt_id" ng-model="payment_service_mapper.pt_id.id">
+                                    <md-option ng-repeat="payment_type in payment_types" value="{{payment_type.id}}">{{
+                                        payment_type.
+                                            name}}</md-option>
+                                </md-select>
+                                
+                                <md-select placeholder="st_id" name="st_id" ng-model="payment_service_mapper.st_id.id">
+                                    <md-option ng-repeat="service_type in service_types" value="{{service_type.id}}">{{
+                                        service_type.
+                                            name}}</md-option>
+                                </md-select>
+                                
                 </div>
                 <md-button md-theme="default" type="button" ng-click="clear();" class="action">Clear</md-button>
                 <md-button md-theme="default" class="action">Save</md-button>

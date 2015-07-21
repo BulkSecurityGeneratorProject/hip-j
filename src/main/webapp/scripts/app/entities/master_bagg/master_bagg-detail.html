@@ -1,0 +1,54 @@
+
+<div>
+    <h2><span translate="jhipsterApp.master_bagg.detail.title">Master_bagg</span> {{master_bagg.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th translate="entity.detail.field">Field</th>
+                    <th translate="entity.detail.value">Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.master_bagg.code">Code</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{master_bagg.code}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.master_bagg.creationTime">Creation_time</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{master_bagg.creationTime}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.master_bagg.handoverTime">Handover_time</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{master_bagg.handoverTime}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jhipsterApp.master_bagg.courier">courier</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{master_bagg.courier.name}}" readonly>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            ui-sref="master_bagg"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

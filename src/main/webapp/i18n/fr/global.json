@@ -34,6 +34,18 @@
                 "courier_preferences": "Courier_preferences",
                 "oneTwo": "OneTwo",
                 "oneThree": "OneThree",
+                "abhishek": "Abhishek",
+                "test01": "Test01",
+                "test02": "Test02",
+                "test03": "Test03",
+                "test04": "Test04",
+                "test05": "Test05",
+                "master_bagg": "Master_bagg",
+                "master_baggg": "Master_baggg",
+                "master_bagggg": "Master_bagggg",
+                "newone": "Newone",
+                "mewone": "Mewone",
+                "jewone": "Jewone",
                 "additionalEntity": "JHipster will add additional entities here (do not translate!)"
             },
             "account": {

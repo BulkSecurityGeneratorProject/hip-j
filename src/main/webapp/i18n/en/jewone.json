@@ -1,0 +1,21 @@
+{
+    "jhipsterApp": {
+        "jewone" : {
+            "home": {
+                "title": "Jewones",
+                "createLabel": "Create a new Jewone",
+                "createOrEditLabel": "Create or edit a Jewone"
+            },
+            "delete": {
+                "question": "Are you sure you want to delete Jewone {{ id }}?"
+            },
+            "detail": {
+                "title": "Jewone"
+            },
+            "code": "Code",
+            "creationTime": "Creation_time",
+            "handoverTime": "Handover_time",
+            "courier": "courier"
+        }
+    }
+}

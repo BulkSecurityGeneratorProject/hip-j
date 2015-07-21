@@ -1,0 +1,35 @@
+{
+    "relationships": [],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "asdf",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Asdf",
+            "fieldNameUnderscored": "asdf",
+            "fieldInJavaBeanMethod": "Asdf",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "qwer",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Qwer",
+            "fieldNameUnderscored": "qwer",
+            "fieldInJavaBeanMethod": "Qwer",
+            "fieldValidate": false
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOwnerOneToOne": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": false,
+    "fieldsContainBigDecimal": false,
+    "fieldsContainDateTime": false,
+    "fieldsContainDate": false,
+    "changelogDate": "20150721061453",
+    "dto": "no",
+    "pagination": "no",
+    "validation": false
+}

@@ -2,6 +2,7 @@
 
 angular.module('jhipsterApp')
     .controller('Master_bagController', function ($scope, Master_bag, Courier, ParseLinks) {
+        window.scope = $scope;
         $scope.master_bags = [];
         $scope.couriers = Courier.query();
         $scope.page = 1;
@@ -20,7 +21,6 @@ angular.module('jhipsterApp')
         $scope.showUpdate = function (id) {
             Master_bag.get({id: id}, function(result) {
                 $scope.master_bag = result;
-                $('#saveMaster_bagModal').modal('show');
             });
         };
 
@@ -38,6 +38,11 @@ angular.module('jhipsterApp')
             }
         };
 
+        $scope.edit = function (entity) {
+            $scope.master_bag = entity;
+            $scope.showForm = true;
+        };
+
         $scope.delete = function (id) {
             Master_bag.delete({id: id},
                 function () {
@@ -48,7 +53,6 @@ angular.module('jhipsterApp')
 
         $scope.refresh = function () {
             $scope.loadAll();
-            $('#saveMaster_bagModal').modal('hide');
             $scope.clear();
         };
 
@@ -62,54 +66,47 @@ angular.module('jhipsterApp')
 
         $scope.gridOptions = {
             data: 'master_bags',
+            enableFiltering: true,
+            onRegisterApi: function(gridApi) {
+                $scope.gridApi = gridApi;
+                gridApi.edit.on.afterCellEdit($scope, function(rowEntity, colDef, newValue, oldValue) {
+                    Master_bag.update(rowEntity,
+                        function() {
+                            $scope.refresh();
+                        });
+                });
+            },
             columnDefs: [{
                 field: "id",
                 displayName: "ID",
                 enableCellEdit: false,
                 pinnedLeft: true
 
-
-
             }, {
                 field: "code",
-                displayName: "First Name"
+                displayName: "code"
 
             }, {
                 field: "creationTime",
-                displayName: "First Name"
+                displayName: "creationTime"
 
             }, {
                 field: "handoverTime",
-                displayName: "First Name"
-
-
-
-
+                displayName: "handoverTime"
 
 
             }, {
                 field: "courier.name",
-                displayName: "Dat Name"
-      
+                displayName: "courier"
 
             }, {
-                name: 'asdf',
-                displayName: "Delete",
+                name: 'placeholder',
+                displayName: '',
                 width: 150,
                 enableSorting: false,
                 enableCellEdit: false,
-                cellTemplate: '<button id="editBtn" type="button" class="btn-small" ng-click="grid.appScope.delete(row.entity.id)" >Delete</button> '
+                enableFiltering: false,
+                cellTemplate: '<button id="delBtn" type="button" class="btn-small" ng-click="grid.appScope.delete(row.entity.id)">Delete</button><button id="editBtn" type="button" class="btn-small" ng-click="grid.appScope.edit(row.entity)">Edit</button>'
             }],
         };
-
-        $scope.gridOptions.onRegisterApi = function(gridApi) {
-            $scope.gridApi = gridApi;
-            gridApi.edit.on.afterCellEdit($scope, function(rowEntity, colDef, newValue, oldValue) {
-                Master_bag.update(rowEntity,
-                    function() {
-                        $scope.refresh();
-                    });
-            });
-        };
-
     });

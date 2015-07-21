@@ -1,0 +1,21 @@
+{
+    "jhipsterApp": {
+        "newone" : {
+            "home": {
+                "title": "Newones",
+                "createLabel": "Create a new Newone",
+                "createOrEditLabel": "Create or edit a Newone"
+            },
+            "delete": {
+                "question": "Are you sure you want to delete Newone {{ id }}?"
+            },
+            "detail": {
+                "title": "Newone"
+            },
+            "code": "Code",
+            "creationTime": "Creation_time",
+            "handoverTime": "Handover_time",
+            "courier": "courier"
+        }
+    }
+}
